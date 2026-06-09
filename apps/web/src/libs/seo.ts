@@ -1,4 +1,4 @@
-const productionRootUrl = "https://rxresu.me/";
+const productionRootUrl = "https://resumebuilder.com/";
 const appName = "Resume Builder";
 const repositoryUrl = "https://github.com/amruthpillai/reactive-resume";
 

@@ -44,9 +44,9 @@ LABEL maintainer="amruthpillai"
 LABEL org.opencontainers.image.licenses="MIT"
 LABEL org.opencontainers.image.title="Reactive Resume"
 LABEL org.opencontainers.image.description="A free and open-source resume builder."
-LABEL org.opencontainers.image.vendor="Amruth Pillai"
-LABEL org.opencontainers.image.url="https://rxresu.me"
-LABEL org.opencontainers.image.documentation="https://docs.rxresu.me"
+LABEL org.opencontainers.image.vendor="CodeByUmar"
+LABEL org.opencontainers.image.url="https://resumebuilder.com"
+LABEL org.opencontainers.image.documentation="https://docs.resumebuilder.com"
 LABEL org.opencontainers.image.source="https://github.com/amruthpillai/reactive-resume"
 
 ENV NODE_ENV="production" \

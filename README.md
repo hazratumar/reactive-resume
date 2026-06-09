@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://rxresu.me">
+  <a href="https://resumebuilder.com">
     <img src="apps/web/public/opengraph/banner.jpg" alt="Reactive Resume" />
   </a>
 
@@ -8,9 +8,9 @@
   <p>Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.</p>
 
   <p>
-    <a href="https://rxresu.me"><strong>Get Started</strong></a>
+    <a href="https://resumebuilder.com"><strong>Get Started</strong></a>
     ·
-    <a href="https://docs.rxresu.me"><strong>Learn More</strong></a>
+    <a href="https://docs.resumebuilder.com"><strong>Learn More</strong></a>
   </p>
 
   <p>
@@ -155,7 +155,7 @@ open http://localhost:3000
 
 [![Build with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/amruthpillai/reactive-resume)
 
-For detailed setup instructions, environment configuration, and self-hosting guides, see the [documentation](https://docs.rxresu.me).
+For detailed setup instructions, environment configuration, and self-hosting guides, see the [documentation](https://docs.resumebuilder.com).
 
 ## Tech Stack
 
@@ -173,15 +173,15 @@ For detailed setup instructions, environment configuration, and self-hosting gui
 
 ## Documentation
 
-Comprehensive guides are available at [docs.rxresu.me](https://docs.rxresu.me):
+Comprehensive guides are available at [docs.resumebuilder.com](https://docs.resumebuilder.com):
 
 | Guide                                                                        | Description                      |
 | ---------------------------------------------------------------------------- | -------------------------------- |
-| [Getting Started](https://docs.rxresu.me/getting-started)                    | First-time setup and basic usage |
-| [Self-Hosting](https://docs.rxresu.me/self-hosting/docker)                   | Deploy on your own server        |
-| [Development Setup](https://docs.rxresu.me/contributing/development)         | Local development environment    |
-| [Project Architecture](https://docs.rxresu.me/contributing/architecture)     | Codebase structure and patterns  |
-| [Exporting Your Resume](https://docs.rxresu.me/guides/exporting-your-resume) | PDF and JSON export options      |
+| [Getting Started](https://docs.resumebuilder.com/getting-started)                    | First-time setup and basic usage |
+| [Self-Hosting](https://docs.resumebuilder.com/self-hosting/docker)                   | Deploy on your own server        |
+| [Development Setup](https://docs.resumebuilder.com/contributing/development)         | Local development environment    |
+| [Project Architecture](https://docs.resumebuilder.com/contributing/architecture)     | Codebase structure and patterns  |
+| [Exporting Your Resume](https://docs.resumebuilder.com/guides/exporting-your-resume) | PDF and JSON export options      |
 
 ## Self-Hosting
 
@@ -202,7 +202,7 @@ docker pull amruthpillai/reactive-resume:latest
 docker pull ghcr.io/amruthpillai/reactive-resume:latest
 ```
 
-See the [self-hosting guide](https://docs.rxresu.me/self-hosting/docker) for complete instructions.
+See the [self-hosting guide](https://docs.resumebuilder.com/self-hosting/docker) for complete instructions.
 
 ## Support
 
@@ -244,7 +244,7 @@ Contributions make open-source thrive. Whether fixing a typo or adding a feature
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-See the [development setup guide](https://docs.rxresu.me/contributing/development) for detailed instructions on how to set up the project locally.
+See the [development setup guide](https://docs.resumebuilder.com/contributing/development) for detailed instructions on how to set up the project locally.
 
 ## License
 

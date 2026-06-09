@@ -1,6 +1,6 @@
 import { env } from "@reactive-resume/env/server";
 
-const DOCS_URL = "https://docs.rxresu.me";
+const DOCS_URL = "https://docs.resumebuilder.com";
 
 type StaticSeoOptions = {
 	head?: boolean;

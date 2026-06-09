@@ -93,7 +93,7 @@ export function ApiKeysSettingsPage() {
 						variant="link"
 						nativeButton={false}
 						render={
-							<a href="https://docs.rxresu.me/api-reference" target="_blank" rel="noopener noreferrer">
+							<a href="https://docs.resumebuilder.com/api-reference" target="_blank" rel="noopener noreferrer">
 								<LinkSimpleIcon />
 								<Trans>API Reference</Trans>
 							</a>

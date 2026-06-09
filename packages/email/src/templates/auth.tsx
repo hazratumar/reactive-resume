@@ -17,7 +17,7 @@ import {
 } from "react-email";
 
 const appName = "Reactive Resume";
-const logoUrl = "https://rxresu.me/icon/dark.svg";
+const logoUrl = "https://resumebuilder.com/icon/dark.svg";
 
 interface AuthEmailLayoutProps {
 	preview: string;

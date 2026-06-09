@@ -47,7 +47,7 @@ export function InformationSectionBuilder() {
 					className="text-xs"
 					nativeButton={false}
 					render={
-						<a href="https://docs.rxresu.me" target="_blank" rel="noopener noreferrer">
+						<a href="https://docs.resumebuilder.com" target="_blank" rel="noopener noreferrer">
 							<Trans>Documentation</Trans>
 						</a>
 					}

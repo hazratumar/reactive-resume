@@ -15,7 +15,7 @@
   },
   "servers": [{ "url": "http://localhost:3000/api/openapi" }],
   "externalDocs": {
-    "url": "https://docs.rxresu.me",
+    "url": "https://docs.resumebuilder.com",
     "description": "Reactive Resume Documentation"
   },
   "components": {

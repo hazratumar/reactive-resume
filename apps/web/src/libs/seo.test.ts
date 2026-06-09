@@ -8,12 +8,12 @@ import {
 
 describe("getCanonicalRootUrl", () => {
 	it("uses the production root when no origin is available", () => {
-		expect(getCanonicalRootUrl()).toBe("https://rxresu.me/");
+		expect(getCanonicalRootUrl()).toBe("https://resumebuilder.com/");
 	});
 
 	it("normalizes an app origin to the root URL", () => {
 		expect(getCanonicalRootUrl("http://localhost:3000")).toBe("http://localhost:3000/");
-		expect(getCanonicalRootUrl("https://rxresu.me/")).toBe("https://rxresu.me/");
+		expect(getCanonicalRootUrl("https://resumebuilder.com/")).toBe("https://resumebuilder.com/");
 	});
 });
 
@@ -25,7 +25,7 @@ describe("createNoindexFollowMeta", () => {
 
 describe("createRootStructuredDataScript", () => {
 	it("serializes JSON-LD using the structured data script id", () => {
-		const script = createRootStructuredDataScript("https://rxresu.me/");
+		const script = createRootStructuredDataScript("https://resumebuilder.com/");
 
 		expect(script.id).toBe("reactive-resume-structured-data");
 		expect(script.type).toBe("application/ld+json");
@@ -33,7 +33,7 @@ describe("createRootStructuredDataScript", () => {
 	});
 
 	it("escapes script-breaking sequences in JSON-LD children", () => {
-		const script = createRootStructuredDataScript("https://rxresu.me/</script><!---->\u2028\u2029");
+		const script = createRootStructuredDataScript("https://resumebuilder.com/</script><!---->\u2028\u2029");
 
 		expect(script.children).not.toContain("</script");
 		expect(script.children).not.toContain("<!--");
@@ -48,13 +48,13 @@ describe("createRootStructuredDataScript", () => {
 
 describe("getRootStructuredData", () => {
 	it("describes only conservative visible product facts", () => {
-		const schemas = getRootStructuredData("https://rxresu.me/");
+		const schemas = getRootStructuredData("https://resumebuilder.com/");
 
 		expect(schemas).toHaveLength(4);
 		expect(schemas[0]).toMatchObject({
 			"@type": "WebSite",
 			name: "Reactive Resume",
-			url: "https://rxresu.me/",
+			url: "https://resumebuilder.com/",
 		});
 		expect(schemas[1]).toMatchObject({
 			"@type": ["SoftwareApplication", "WebApplication"],

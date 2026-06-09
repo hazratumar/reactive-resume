@@ -22,7 +22,7 @@ This is the future I'm hoping to build toward.
 
 The Reactive Resume JSON Schema is publicly available at:
 
-<Info>[https://rxresu.me/schema.json](https://rxresu.me/schema.json)</Info>
+<Info>[https://resumebuilder.com/schema.json](https://resumebuilder.com/schema.json)</Info>
 
 This endpoint returns a complete JSON Schema (draft 07 compatible) that describes the structure of a Reactive Resume document. It includes:
 
@@ -37,7 +37,7 @@ The schema includes a `version` field to track compatibility:
 
 ```json
 {
-  "$schema": "https://rxresu.me/schema.json",
+  "$schema": "https://resumebuilder.com/schema.json",
   "version": "5.0.0"
 }
 ```
@@ -54,7 +54,7 @@ You can use the schema to validate resume JSON files in any language that suppor
 import Ajv from "ajv";
 
 const ajv = new Ajv();
-const schema = await fetch("https://rxresu.me/schema.json").then((r) => r.json());
+const schema = await fetch("https://resumebuilder.com/schema.json").then((r) => r.json());
 const validate = ajv.compile(schema);
 
 const isValid = validate(resumeData);
@@ -69,7 +69,7 @@ Add the `$schema` property to your resume JSON files to get autocompletion and v
 
 ```json
 {
-  "$schema": "https://rxresu.me/schema.json",
+  "$schema": "https://resumebuilder.com/schema.json",
   "version": "5.0.0",
   "basics": {
     "name": "John Doe"
@@ -131,7 +131,7 @@ Want to integrate? The schema is open and freely available. You can fetch it pro
 
 ## Complete JSON Schema
 
-Below is the complete JSON Schema for Reactive Resume. You can also fetch the latest version directly from [https://rxresu.me/schema.json](https://rxresu.me/schema.json).
+Below is the complete JSON Schema for Reactive Resume. You can also fetch the latest version directly from [https://resumebuilder.com/schema.json](https://resumebuilder.com/schema.json).
 
 <Tip>Copy the schema from the live endpoint to ensure you always have the latest version.</Tip>
 

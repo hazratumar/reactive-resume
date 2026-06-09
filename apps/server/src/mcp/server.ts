@@ -28,17 +28,17 @@ export async function createMcpServer(request: Request) {
 			name: "reactive-resume",
 			version: appVersion,
 			title: "Resume Builder",
-			websiteUrl: "https://rxresu.me",
+			websiteUrl: "https://resumebuilder.com",
 			description:
 				"Resume Builder is a free and open-source resume builder. Use this MCP server to interact with your resume using an LLM of your choice.",
 			icons: [
 				{
-					src: "https://rxresu.me/icon/light.svg",
+					src: "https://resumebuilder.com/icon/light.svg",
 					mimeType: "image/svg+xml",
 					theme: "light",
 				},
 				{
-					src: "https://rxresu.me/icon/dark.svg",
+					src: "https://resumebuilder.com/icon/dark.svg",
 					mimeType: "image/svg+xml",
 					theme: "dark",
 				},

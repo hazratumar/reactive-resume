@@ -51,7 +51,7 @@ export async function handleOpenApi(request: Request) {
 				contact: { name: "CodeByUmar", email: "hello@amruthpillai.com", url: "https://amruthpillai.com" },
 			},
 			servers: [{ url: `${env.APP_URL}/api/openapi` }],
-			externalDocs: { url: "https://docs.rxresu.me", description: "Reactive Resume Documentation" },
+			externalDocs: { url: "https://docs.resumebuilder.com", description: "Reactive Resume Documentation" },
 			commonSchemas: {
 				ResumeData: { schema: resumeDataSchema },
 			},

@@ -22,7 +22,7 @@ describe("SEO static endpoints", () => {
 		expect(text).toContain("Disallow: /mcp");
 		expect(text).toContain("Disallow: /.well-known");
 		expect(text).toContain("Sitemap: https://app.example.com/sitemap.xml");
-		expect(text).toContain("Sitemap: https://docs.rxresu.me/sitemap.xml");
+		expect(text).toContain("Sitemap: https://docs.resumebuilder.com/sitemap.xml");
 		expect(text).not.toMatch(/GPTBot|ClaudeBot|PerplexityBot|CCBot|ChatGPT-User/);
 	});
 
@@ -33,7 +33,7 @@ describe("SEO static endpoints", () => {
 		expect(response.status).toBe(200);
 		expect(response.headers.get("Content-Type")).toBe("application/xml; charset=UTF-8");
 		expect(text).toContain("<loc>https://app.example.com/</loc>");
-		expect(text).not.toContain("docs.rxresu.me");
+		expect(text).not.toContain("docs.resumebuilder.com");
 		expect(text).not.toContain("/auth");
 		expect(text).not.toContain("/dashboard");
 		expect(text).not.toContain("/builder");
@@ -49,12 +49,12 @@ describe("SEO static endpoints", () => {
 		expect(response.headers.get("Content-Type")).toBe("text/plain; charset=UTF-8");
 		expect(text).toContain("# Reactive Resume");
 		expect(text).toContain("- Product: https://app.example.com");
-		expect(text).toContain("- Documentation: https://docs.rxresu.me");
-		expect(text).toContain("- Documentation sitemap: https://docs.rxresu.me/sitemap.xml");
-		expect(text).toContain("- Documentation llms.txt: https://docs.rxresu.me/llms.txt");
-		expect(text).toContain("- API documentation: https://docs.rxresu.me/api-reference");
+		expect(text).toContain("- Documentation: https://docs.resumebuilder.com");
+		expect(text).toContain("- Documentation sitemap: https://docs.resumebuilder.com/sitemap.xml");
+		expect(text).toContain("- Documentation llms.txt: https://docs.resumebuilder.com/llms.txt");
+		expect(text).toContain("- API documentation: https://docs.resumebuilder.com/api-reference");
 		expect(text).toContain("- Resume schema: https://app.example.com/schema.json");
-		expect(text).toContain("- MCP documentation: https://docs.rxresu.me/guides/using-the-mcp-server");
+		expect(text).toContain("- MCP documentation: https://docs.resumebuilder.com/guides/using-the-mcp-server");
 		expect(text).toContain("- OpenAPI specification: https://app.example.com/api/openapi/spec.json");
 	});
 

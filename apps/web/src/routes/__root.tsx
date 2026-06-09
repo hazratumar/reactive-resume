@@ -46,7 +46,7 @@ const description =
 export const Route = createRootRouteWithContext<RouterContext>()({
 	component: RootComponent,
 	head: () => {
-		const appUrl = typeof window !== "undefined" ? window.location.origin : "https://rxresu.me";
+		const appUrl = typeof window !== "undefined" ? window.location.origin : "https://resumebuilder.com";
 
 		return {
 			links: [

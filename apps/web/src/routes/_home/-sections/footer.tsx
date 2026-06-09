@@ -25,10 +25,10 @@ type SocialLink = {
 };
 
 const getResourceLinks = (): FooterLinkItem[] => [
-	{ url: "https://docs.rxresu.me", label: t`Documentation` },
+	{ url: "https://docs.resumebuilder.com", label: t`Documentation` },
 	{ url: "https://opencollective.com/reactive-resume/donate", label: t`Sponsorships` },
 	{ url: "https://github.com/amruthpillai/reactive-resume", label: t`Source Code` },
-	{ url: "https://docs.rxresu.me/changelog", label: t`Changelog` },
+	{ url: "https://docs.resumebuilder.com/changelog", label: t`Changelog` },
 ];
 
 const getCommunityLinks = (): FooterLinkItem[] => [

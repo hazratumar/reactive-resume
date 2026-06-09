@@ -13,7 +13,7 @@ import { Testimonials } from "./-sections/testimonials";
 export const Route = createFileRoute("/_home/")({
 	component: RouteComponent,
 	head: () => {
-		const appUrl = typeof window !== "undefined" ? window.location.origin : "https://rxresu.me";
+		const appUrl = typeof window !== "undefined" ? window.location.origin : "https://resumebuilder.com";
 		const canonicalUrl = getCanonicalRootUrl(appUrl);
 
 		return {

@@ -12,9 +12,9 @@ const testimonials: string[] = [
 
 	"I want to appreciate you for making your projects #openSource, most especially your Reactive Resume, which is the handiest truly-free resume maker I've come across. This is a big shoutout to you. Well done!",
 
-	"I'd like to appreciate the great work you've done with rxresu.me. The website's design, smooth functionality, and ease of use under the free plan are really impressive. It's clear that a lot of thought and effort has gone into building and maintaining such a useful platform.",
+	"I'd like to appreciate the great work you've done with resumebuilder.com. The website's design, smooth functionality, and ease of use under the free plan are really impressive. It's clear that a lot of thought and effort has gone into building and maintaining such a useful platform.",
 
-	"I just wanted to reach you out and thank you personally for your wonderful project rxresu.me. It is very valuable, and the fact that it is open source, makes it all the more meaningful, since there are lots of people who struggle to make their CV look good. For my part, it saved me a lot of time and helped me shape my CV in a very efficient way.",
+	"I just wanted to reach you out and thank you personally for your wonderful project resumebuilder.com. It is very valuable, and the fact that it is open source, makes it all the more meaningful, since there are lots of people who struggle to make their CV look good. For my part, it saved me a lot of time and helped me shape my CV in a very efficient way.",
 
 	"I appreciate your effort in open-sourcing and making it free for everyone to use, it's a great effort. By using this platform, I got a job secured in the government sector of Oman, that too in a ministry. Thank you for providing this platform. Keep going, appreciate the effort. ❤️",
 
