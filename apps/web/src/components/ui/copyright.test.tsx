@@ -28,9 +28,9 @@ describe("Copyright", () => {
 		expect(link.getAttribute("rel")).toBe("noopener noreferrer");
 	});
 
-	it("renders the Amruth Pillai attribution link", () => {
+	it("renders the CodeByUmar attribution link", () => {
 		renderCopyright();
-		const link = screen.getByRole("link", { name: "Amruth Pillai" });
+		const link = screen.getByRole("link", { name: "CodeByUmar" });
 		expect(link.getAttribute("href")).toBe("https://amruthpillai.com");
 	});
 

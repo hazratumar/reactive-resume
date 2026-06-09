@@ -34,7 +34,7 @@ export function Copyright({ className, ...props }: Props) {
 						href="https://amruthpillai.com"
 						className="font-medium underline underline-offset-2"
 					>
-						Amruth Pillai
+						CodeByUmar
 					</a>
 					.
 				</Trans>

@@ -116,7 +116,7 @@ function AuthEmailLayout({ preview, heading, intro, details, actionLabel, action
 									href="https://amruthpillai.com"
 									className="text-inherit underline underline-offset-2"
 								>
-									Amruth Pillai
+									CodeByUmar
 								</Link>
 								.
 							</Text>
