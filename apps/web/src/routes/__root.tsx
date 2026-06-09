@@ -37,10 +37,10 @@ type RouterContext = {
 };
 
 const appName = "Resume Builder";
-const tagline = "A free and open-source resume builder";
+const tagline = "A powerful resume builder";
 const title = `${appName} — ${tagline}`;
 const description =
-	"Resume Builder is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.";
+	"Resume Builder is a powerful tool that simplifies the process of creating, updating, and sharing your resume.";
 
 export const Route = createRootRouteWithContext<RouterContext>()({
 	component: RootComponent,

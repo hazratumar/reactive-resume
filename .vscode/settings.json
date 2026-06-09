@@ -27,5 +27,6 @@
 		["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
 	],
 	"tailwindCSS.experimental.configFile": "src/styles/globals.css",
-	"typescript.experimental.useTsgo": true
+	"typescript.experimental.useTsgo": true,
+	"typescript.autoClosingTags": false
 }

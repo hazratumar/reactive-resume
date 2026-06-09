@@ -4,7 +4,6 @@ import { Trans } from "@lingui/react/macro";
 import {
 	CloudArrowUpIcon,
 	CodeSimpleIcon,
-	CurrencyDollarIcon,
 	DatabaseIcon,
 	DotsThreeIcon,
 	FilePdfIcon,
@@ -34,16 +33,10 @@ type FeatureCardProps = Feature;
 
 const getFeatures = (): Feature[] => [
 	{
-		id: "free",
-		icon: CurrencyDollarIcon,
-		title: t`Free`,
-		description: t`Completely free, forever, no hidden costs.`,
-	},
-	{
-		id: "open-source",
+		id: "community",
 		icon: GithubLogoIcon,
-		title: t`Open Source`,
-		description: t`By the community, for the community.`,
+		title: t`Community-Driven`,
+		description: t`Built with community contributions and available to self-host.`,
 	},
 	{
 		id: "no-ads",
@@ -185,8 +178,8 @@ export function Features() {
 
 				<p className="max-w-2xl text-muted-foreground leading-relaxed">
 					<Trans>
-						Everything you need to create, customize, and share professional resumes. Built with privacy in mind,
-						powered by open source, and completely free forever.
+						Everything you need to create, customize, and share professional resumes. Built with privacy in mind and
+						designed to help you stand out.
 					</Trans>
 				</p>
 			</m.div>

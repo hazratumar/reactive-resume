@@ -14,8 +14,8 @@ type FAQItemData = {
 
 const getFaqItems = (): FAQItemData[] => [
 	{
-		question: t`Is Resume Builder really free?`,
-		answer: t`Yes! Resume Builder is completely free to use, with no hidden costs, premium tiers, or subscription fees. It's open-source and will always remain free.`,
+		question: t`What does Resume Builder cost?`,
+		answer: t`Resume Builder offers straightforward pricing with no surprise charges. Check out our pricing page for details on what's included.`,
 	},
 	{
 		question: t`How is my data protected?`,
@@ -52,7 +52,7 @@ const getFaqItems = (): FAQItemData[] => [
 	},
 	{
 		question: t`What makes Resume Builder different from other resume builders?`,
-		answer: t`Resume Builder is open-source, privacy-focused, and completely free. Unlike other resume builders, it doesn't show ads, track your data, or limit your features behind a paywall.`,
+		answer: t`Resume Builder is privacy-focused and built with a clean, distraction-free experience in mind. Unlike other resume builders, it doesn't show ads or sell your data.`,
 	},
 	{
 		question: t`How do I share my resume?`,

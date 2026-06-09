@@ -62,8 +62,7 @@ export function Footer() {
 						<h2 className="font-semibold text-lg tracking-tight">Resume Builder</h2>
 						<p className="max-w-xs text-muted-foreground text-sm leading-relaxed">
 							<Trans>
-								A free and open-source resume builder that simplifies the process of creating, updating, and sharing
-								your resume.
+								A powerful resume builder that simplifies the process of creating, updating, and sharing your resume.
 							</Trans>
 						</p>
 					</div>
