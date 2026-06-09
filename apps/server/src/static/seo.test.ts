@@ -47,7 +47,7 @@ describe("SEO static endpoints", () => {
 
 		expect(response.status).toBe(200);
 		expect(response.headers.get("Content-Type")).toBe("text/plain; charset=UTF-8");
-		expect(text).toContain("# Reactive Resume");
+		expect(text).toContain("# Resume Builder");
 		expect(text).toContain("- Product: https://app.example.com");
 		expect(text).toContain("- Documentation: https://docs.resumebuilder.com");
 		expect(text).toContain("- Documentation sitemap: https://docs.resumebuilder.com/sitemap.xml");

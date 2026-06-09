@@ -1,11 +1,11 @@
 ---
 title: "Quickstart"
-description: "Get started with Reactive Resume in minutes — use our hosted version or deploy your own instance"
+description: "Get started with Resume Builder in minutes — use our hosted version or deploy your own instance"
 ---
 
 ## Options
 
-Reactive Resume offers flexibility in how you want to use it. Choose the option that best fits your needs:
+Resume Builder offers flexibility in how you want to use it. Choose the option that best fits your needs:
 
 <CardGroup cols={2}>
   <Card title="Use the Cloud Version" icon="cloud" href="#use-the-cloud-version">
@@ -20,7 +20,7 @@ Reactive Resume offers flexibility in how you want to use it. Choose the option 
 
 ## Using the Cloud Version
 
-The easiest way to use Reactive Resume is through our cloud version at [resumebuilder.com](https://resumebuilder.com). **This service is completely free and will always remain free.**
+The easiest way to use Resume Builder is through our cloud version at [resumebuilder.com](https://resumebuilder.com). **This service is completely free and will always remain free.**
 
 <Steps>
 	<Step title="Create an Account">
@@ -49,7 +49,7 @@ The easiest way to use Reactive Resume is through our cloud version at [resumebu
 
 ## Self-Host with Docker
 
-For users who prefer complete control over their data, you can deploy Reactive Resume on your own infrastructure using Docker.
+For users who prefer complete control over their data, you can deploy Resume Builder on your own infrastructure using Docker.
 
 <Info>
   **From v5.1.0 onwards** — PDF generation now runs entirely client-side via `@react-pdf/renderer`. Self-hosted deployments no longer require Browserless, Chromium, or any external print service as a dependency. The `PRINTER_*` and `BROWSERLESS_*` environment variables are no longer read and can be removed from your `.env`.
@@ -117,11 +117,11 @@ ENCRYPTION_SECRET=your-secure-encryption-secret-here
     	- **PostgreSQL** — Database for storing user data and resumes
 	- **Redis** — Required for the AI Agent workspace
     	- **SeaweedFS** — S3-compatible storage for file uploads
-    	- **Reactive Resume** — The main application
+    	- **Resume Builder** — The main application
     </Step>
 
     <Step title="Access Your Instance">
-    	Once all services are running, access your Reactive Resume instance at:
+    	Once all services are running, access your Resume Builder instance at:
 
     	```text
     	http://localhost:3000
@@ -139,11 +139,11 @@ Here's what each service in the stack does:
 | `postgres`        | 5432 | PostgreSQL database for storing all application data |
 | `redis`           | 6379 | Redis instance required by the AI Agent workspace    |
 | `seaweedfs`       | 8333 | S3-compatible object storage for file uploads        |
-| `reactive_resume` | 3000 | The main Reactive Resume application                 |
+| `reactive_resume` | 3000 | The main Resume Builder application                 |
 
 <Note>
   Saved AI provider management requires `ENCRYPTION_SECRET`, and the AI Agent workspace requires both `REDIS_URL` and
-  `ENCRYPTION_SECRET`. Other Reactive Resume features can run without them. Agent attachments and other private objects
+  `ENCRYPTION_SECRET`. Other Resume Builder features can run without them. Agent attachments and other private objects
   require S3-compatible storage; local storage rejects private objects.
 </Note>
 
@@ -224,7 +224,7 @@ Here's a complete list of environment variables you can configure:
 
 <CardGroup cols={2}>
   <Card title="Development Setup" icon="code" href="/contributing/development">
-    Set up a development environment to contribute or customize Reactive Resume.
+    Set up a development environment to contribute or customize Resume Builder.
   </Card>
   <Card title="Project Architecture" icon="folder-open" href="/contributing/architecture">
     Learn about the project structure and architecture.

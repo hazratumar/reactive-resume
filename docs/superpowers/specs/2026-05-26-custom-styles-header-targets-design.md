@@ -2,7 +2,7 @@
 
 ## Context
 
-Reactive Resume now stores user-defined custom styling as structured style rules in `metadata.styleRules`. The current rule system targets semantic section content and rich-text slots, then resolves those rules in `packages/pdf` through the shared section-style context.
+Resume Builder now stores user-defined custom styling as structured style rules in `metadata.styleRules`. The current rule system targets semantic section content and rich-text slots, then resolves those rules in `packages/pdf` through the shared section-style context.
 
 The resume header is not currently part of that section-style context. Profile pictures, `basics.name`, `basics.headline`, and contact items are rendered directly inside each template header. That means users can style normal sections but cannot target the highest-visibility identity and contact content.
 

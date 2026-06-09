@@ -1,11 +1,11 @@
 <div align="center">
   <a href="https://resumebuilder.com">
-    <img src="apps/web/public/opengraph/banner.jpg" alt="Reactive Resume" />
+    <img src="apps/web/public/opengraph/banner.jpg" alt="Resume Builder" />
   </a>
 
-  <h1>Reactive Resume</h1>
+  <h1>Resume Builder</h1>
 
-  <p>Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.</p>
+  <p>Resume Builder is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.</p>
 
   <p>
     <a href="https://resumebuilder.com"><strong>Get Started</strong></a>
@@ -14,7 +14,7 @@
   </p>
 
   <p>
-    <img src="https://img.shields.io/github/package-json/v/amruthpillai/resume-builder?style=flat-square" alt="Reactive Resume Version">
+    <img src="https://img.shields.io/github/package-json/v/amruthpillai/resume-builder?style=flat-square" alt="Resume Builder Version">
     <img src="https://img.shields.io/github/stars/amruthpillai/resume-builder?style=flat-square" alt="GitHub Stars">
     <img src="https://img.shields.io/github/license/amruthpillai/resume-builder?style=flat-square" alt="License" />
     <img src="https://img.shields.io/docker/pulls/amruthpillai/resume-builder?style=flat-square" alt="Docker Pulls" />
@@ -27,9 +27,9 @@
 
 ---
 
-Reactive Resume makes building resumes straightforward. Pick a template, fill in your details, and export to PDF—no account required for basic use. For those who want more control, the entire application can be self-hosted on your own infrastructure.
+Resume Builder makes building resumes straightforward. Pick a template, fill in your details, and export to PDF—no account required for basic use. For those who want more control, the entire application can be self-hosted on your own infrastructure.
 
-Built with privacy as a core principle, Reactive Resume gives you complete ownership of your data. The codebase is fully open-source under the MIT license, with no tracking, no ads, and no hidden costs.
+Built with privacy as a core principle, Resume Builder gives you complete ownership of your data. The codebase is fully open-source under the MIT license, with no tracking, no ads, and no hidden costs.
 
 ## Features
 
@@ -139,7 +139,7 @@ Built with privacy as a core principle, Reactive Resume gives you complete owner
 
 ## Quick Start
 
-The quickest way to run Reactive Resume locally:
+The quickest way to run Resume Builder locally:
 
 ```bash
 # Clone the repository
@@ -185,7 +185,7 @@ Comprehensive guides are available at [docs.resumebuilder.com](https://docs.resu
 
 ## Self-Hosting
 
-Reactive Resume can be self-hosted using Docker. The stack includes:
+Resume Builder can be self-hosted using Docker. The stack includes:
 
 - **PostgreSQL** — Database for storing user data and resumes
 - **SeaweedFS** (optional) — S3-compatible storage for file uploads
@@ -206,7 +206,7 @@ See the [self-hosting guide](https://docs.resumebuilder.com/self-hosting/docker)
 
 ## Support
 
-Reactive Resume is and always will be free and open-source. If it has helped you land a job or saved you time, please consider supporting continued development:
+Resume Builder is and always will be free and open-source. If it has helped you land a job or saved you time, please consider supporting continued development:
 
 <p>
   <a href="https://github.com/sponsors/AmruthPillai">

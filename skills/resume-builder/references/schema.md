@@ -1,4 +1,4 @@
-# Reactive Resume Schema Reference
+# Resume Builder Schema Reference
 
 The complete JSON Schema is available at: https://resumebuilder.com/schema.json
 

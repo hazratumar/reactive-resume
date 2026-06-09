@@ -11,7 +11,7 @@ describe("buildMcpServerCard", () => {
 
 	it("identifies the server as resume-builder", () => {
 		expect(card.serverInfo.name).toBe("resume-builder");
-		expect(card.serverInfo.title).toBe("Reactive Resume");
+		expect(card.serverInfo.title).toBe("Resume Builder");
 		expect(card.serverInfo.websiteUrl).toBe("https://resumebuilder.com");
 	});
 

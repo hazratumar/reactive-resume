@@ -1,8 +1,8 @@
 {
   "info": {
-    "title": "Reactive Resume",
+    "title": "Resume Builder",
     "version": "5.1.0",
-    "description": "Reactive Resume API",
+    "description": "Resume Builder API",
     "license": {
       "name": "MIT",
       "url": "https://github.com/amruthpillai/resume-builder/blob/main/LICENSE"
@@ -16,7 +16,7 @@
   "servers": [{ "url": "http://localhost:3000/api/openapi" }],
   "externalDocs": {
     "url": "https://docs.resumebuilder.com",
-    "description": "Reactive Resume Documentation"
+    "description": "Resume Builder Documentation"
   },
   "components": {
     "securitySchemes": {
@@ -2882,7 +2882,7 @@
       "get": {
         "operationId": "listAuthProviders",
         "summary": "List authentication providers",
-        "description": "Returns a list of all authentication providers enabled on this Reactive Resume instance, along with their display names. Possible providers include password-based credentials, Google, GitHub, LinkedIn, and custom OAuth. No authentication required.",
+        "description": "Returns a list of all authentication providers enabled on this Resume Builder instance, along with their display names. Possible providers include password-based credentials, Google, GitHub, LinkedIn, and custom OAuth. No authentication required.",
         "tags": ["Authentication"],
         "responses": {
           "200": {
@@ -2914,7 +2914,7 @@
       "get": {
         "operationId": "getFeatureFlags",
         "summary": "Get feature flags",
-        "description": "Returns the current feature flags for this Reactive Resume instance. Feature flags control instance-wide settings such as whether new user signups or email-based authentication are disabled. No authentication required.",
+        "description": "Returns the current feature flags for this Resume Builder instance. Feature flags control instance-wide settings such as whether new user signups or email-based authentication are disabled. No authentication required.",
         "tags": ["Feature Flags"],
         "responses": {
           "200": {
@@ -4169,7 +4169,7 @@
       "get": {
         "operationId": "getUserCount",
         "summary": "Get total number of users",
-        "description": "Returns the total number of registered users on this Reactive Resume instance. The count is cached for up to 6 hours for performance. No authentication required.",
+        "description": "Returns the total number of registered users on this Resume Builder instance. The count is cached for up to 6 hours for performance. No authentication required.",
         "tags": ["Platform Statistics"],
         "responses": {
           "200": {
@@ -4190,7 +4190,7 @@
       "get": {
         "operationId": "getResumeCount",
         "summary": "Get total number of resumes",
-        "description": "Returns the total number of resumes created on this Reactive Resume instance. The count is cached for up to 6 hours for performance. No authentication required.",
+        "description": "Returns the total number of resumes created on this Resume Builder instance. The count is cached for up to 6 hours for performance. No authentication required.",
         "tags": ["Platform Statistics"],
         "responses": {
           "200": {
@@ -4211,11 +4211,11 @@
       "get": {
         "operationId": "getGitHubStarCount",
         "summary": "Get GitHub star count",
-        "description": "Returns the number of GitHub stars for the Reactive Resume repository. The count is cached for up to 6 hours and falls back to a last-known value if the GitHub API is unavailable. No authentication required.",
+        "description": "Returns the number of GitHub stars for the Resume Builder repository. The count is cached for up to 6 hours and falls back to a last-known value if the GitHub API is unavailable. No authentication required.",
         "tags": ["Platform Statistics"],
         "responses": {
           "200": {
-            "description": "The number of GitHub stars for the Reactive Resume repository.",
+            "description": "The number of GitHub stars for the Resume Builder repository.",
             "content": {
               "application/json": {
                 "schema": {

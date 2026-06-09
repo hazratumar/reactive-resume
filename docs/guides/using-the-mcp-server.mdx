@@ -1,9 +1,9 @@
 ---
 title: "Using the MCP Server"
-description: "Connect Reactive Resume to AI tools like Claude Desktop, Cursor, and Codex using the Model Context Protocol"
+description: "Connect Resume Builder to AI tools like Claude Desktop, Cursor, and Codex using the Model Context Protocol"
 ---
 
-The Reactive Resume MCP server lets you manage and modify your resumes through any MCP-compatible AI tool — Claude Desktop, Cursor, Codex, and more. It connects to the Reactive Resume API and exposes tools for listing, reading, and patching resumes using natural language.
+The Resume Builder MCP server lets you manage and modify your resumes through any MCP-compatible AI tool — Claude Desktop, Cursor, Codex, and more. It connects to the Resume Builder API and exposes tools for listing, reading, and patching resumes using natural language.
 
 ## What is MCP?
 
@@ -13,7 +13,7 @@ The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) is a standar
 
 <Steps>
   <Step title="Choose your authentication method">
-    Reactive Resume MCP supports two authentication methods:
+    Resume Builder MCP supports two authentication methods:
 
     - **OAuth2 (recommended):** best user experience for clients that support MCP OAuth.
     - **API key (fallback):** works in all clients that can send custom headers.
@@ -99,9 +99,9 @@ If your client only supports `command` / `args` (for example, local-only Claude 
 | Codex             | `~/.codex/config.toml` or `.codex/config.toml` ([docs](https://developers.openai.com/codex/mcp)) |
 | Other MCP clients | Refer to the client's documentation                                                              |
 
-## Authentication Details (How Reactive Resume MCP Works)
+## Authentication Details (How Resume Builder MCP Works)
 
-Reactive Resume MCP accepts authentication in this order:
+Resume Builder MCP accepts authentication in this order:
 
 1. **Bearer token (OAuth2 access token)** via `Authorization: Bearer <token>`
 2. **API key fallback** via `x-api-key: <key>`
@@ -114,7 +114,7 @@ This lets OAuth-capable MCP clients discover and complete the OAuth flow automat
 
 ### OAuth2 flow used by this server
 
-Reactive Resume is configured as an OAuth authorization server for MCP clients:
+Resume Builder is configured as an OAuth authorization server for MCP clients:
 
 - The MCP endpoint is `https://resumebuilder.com/mcp`.
 - OAuth discovery metadata is exposed under `/.well-known/*` endpoints.
@@ -194,7 +194,7 @@ Use `mcp-remote` bridge with API key (example shown above in **Method 2**).
 
 ## Self-Hosting
 
-If you're running a self-hosted Reactive Resume instance, replace `https://resumebuilder.com/mcp` with your instance URL:
+If you're running a self-hosted Resume Builder instance, replace `https://resumebuilder.com/mcp` with your instance URL:
 
 ```json
 {
@@ -317,6 +317,6 @@ Once your MCP client is connected, you can use natural language to interact with
 | OAuth login opens but fails redirect/callback                 | Confirm your client's MCP OAuth callback settings and retry the connection                                                     |
 | "API error (401)"                                             | Your API key is invalid or expired. Create a new one in **Settings → API Keys**                                                |
 | "API error (404)"                                             | The resume ID doesn't exist. Use `list_resumes` to find valid IDs                                                             |
-| "API error (403)"                                             | The resume is locked. Unlock it in the Reactive Resume dashboard                                                               |
+| "API error (403)"                                             | The resume is locked. Unlock it in the Resume Builder dashboard                                                               |
 | Connection refused                                            | Check that the URL is correct and the instance is running                                                                      |
 | "ReferenceError: File is not defined" when using `mcp-remote` | You're running Node.js 18. `mcp-remote` requires **Node.js 20 or later** — upgrade with `nvm use 20` or `nvm alias default 20` |
