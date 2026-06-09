@@ -3,10 +3,10 @@ import { msg } from "@lingui/core/macro";
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
 import {
-	BrainIcon,
-	ChatCircleDotsIcon,
+	//   BrainIcon,
+	//   ChatCircleDotsIcon,
 	GearSixIcon,
-	KeyIcon,
+	//   KeyIcon,
 	ReadCvLogoIcon,
 	ShieldCheckIcon,
 	UserCircleIcon,
@@ -47,11 +47,11 @@ const appSidebarItems = [
 		label: msg`Resumes`,
 		href: "/dashboard/resumes",
 	},
-	{
-		icon: <ChatCircleDotsIcon />,
-		label: msg`Agents`,
-		href: "/agent",
-	},
+	//   {
+	//     icon: <ChatCircleDotsIcon />,
+	//     label: msg`Agents`,
+	//     href: "/agent",
+	//   },
 ] as const satisfies SidebarItem[];
 
 const settingsSidebarItems = [
@@ -70,16 +70,16 @@ const settingsSidebarItems = [
 		label: msg`Authentication`,
 		href: "/dashboard/settings/authentication",
 	},
-	{
-		icon: <KeyIcon />,
-		label: msg`API Keys`,
-		href: "/dashboard/settings/api-keys",
-	},
-	{
-		icon: <BrainIcon />,
-		label: msg`Integrations`,
-		href: "/dashboard/settings/integrations",
-	},
+	//   {
+	//     icon: <KeyIcon />,
+	//     label: msg`API Keys`,
+	//     href: "/dashboard/settings/api-keys",
+	//   },
+	//   {
+	//     icon: <BrainIcon />,
+	//     label: msg`Integrations`,
+	//     href: "/dashboard/settings/integrations",
+	//   },
 	{
 		icon: <WarningIcon />,
 		label: msg`Danger Zone`,

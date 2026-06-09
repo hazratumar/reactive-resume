@@ -4,7 +4,7 @@ import { t } from "@lingui/core/macro";
 import {
 	ArticleIcon,
 	BooksIcon,
-	BrainIcon,
+	//   BrainIcon,
 	BriefcaseIcon,
 	CertificateIcon,
 	ChartLineIcon,
@@ -17,7 +17,7 @@ import {
 	GraduationCapIcon,
 	HandHeartIcon,
 	ImageIcon,
-	InfoIcon,
+	//   InfoIcon,
 	LayoutIcon,
 	MessengerLogoIcon,
 	NotepadIcon,
@@ -52,9 +52,9 @@ export type RightSidebarSection =
 	| "notes"
 	| "sharing"
 	| "statistics"
-	| "analysis"
-	| "export"
-	| "information";
+	// | "analysis"
+	| "export";
+// | "information"
 
 export type SidebarSection = LeftSidebarSection | RightSidebarSection;
 
@@ -87,9 +87,9 @@ export const rightSidebarSections: RightSidebarSection[] = [
 	"notes",
 	"sharing",
 	"statistics",
-	"analysis",
+	// "analysis",
 	"export",
-	"information",
+	// "information",
 ] as const;
 
 export const getSectionTitle = (type: SidebarSection | CustomOnlyType): string => {
@@ -126,9 +126,9 @@ export const getSectionTitle = (type: SidebarSection | CustomOnlyType): string =
 			.with("notes", () => t`Notes`)
 			.with("sharing", () => t`Sharing`)
 			.with("statistics", () => t`Statistics`)
-			.with("analysis", () => t`Resume Analysis`)
+			// .with("analysis", () => t`Resume Analysis`)
 			.with("export", () => t`Export`)
-			.with("information", () => t`Information`)
+			// .with("information", () => t`Information`)
 
 			.exhaustive()
 	);
@@ -170,9 +170,9 @@ export const getSectionIcon = (type: SidebarSection | CustomOnlyType, props?: Ic
 			.with("notes", () => <NotepadIcon {...iconProps} />)
 			.with("sharing", () => <ShareFatIcon {...iconProps} />)
 			.with("statistics", () => <ChartLineIcon {...iconProps} />)
-			.with("analysis", () => <BrainIcon {...iconProps} />)
+			// .with("analysis", () => <BrainIcon {...iconProps} />)
 			.with("export", () => <DownloadIcon {...iconProps} />)
-			.with("information", () => <InfoIcon {...iconProps} />)
+			// .with("information", () => <InfoIcon {...iconProps} />)
 
 			.exhaustive()
 	);

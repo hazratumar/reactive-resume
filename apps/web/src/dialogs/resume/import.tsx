@@ -12,7 +12,7 @@ import z from "zod";
 import { JSONResumeImporter } from "@resume-builder/import/json-resume";
 import { ReactiveResumeJSONImporter } from "@resume-builder/import/resume-builder-json";
 import { ReactiveResumeV4JSONImporter } from "@resume-builder/import/resume-builder-v4-json";
-import { Badge } from "@resume-builder/ui/components/badge";
+// import { Badge } from "@resume-builder/ui/components/badge";
 import { Button } from "@resume-builder/ui/components/button";
 import {
 	DialogContent,
@@ -280,30 +280,30 @@ export function ImportResumeDialog(_: DialogProps<"resume.import">) {
 													message: "JSON Resume",
 												}),
 											},
-											{
-												value: "pdf",
-												label: (
-													<div className="flex items-center gap-x-2">
-														{t({
-															comment: "File format label in import source selector",
-															message: "PDF",
-														})}{" "}
-														<Badge>{t`AI`}</Badge>
-													</div>
-												),
-											},
-											{
-												value: "docx",
-												label: (
-													<div className="flex items-center gap-x-2">
-														{t({
-															comment: "File format label in import source selector",
-															message: "Microsoft Word",
-														})}{" "}
-														<Badge>{t`AI`}</Badge>
-													</div>
-												),
-											},
+											// {
+											// 	value: "pdf",
+											// 	label: (
+											// 		<div className="flex items-center gap-x-2">
+											// 			{t({
+											// 				comment: "File format label in import source selector",
+											// 				message: "PDF",
+											// 			})}{" "}
+											// 			<Badge>{t`AI`}</Badge>
+											// 		</div>
+											// 	),
+											// },
+											// {
+											// 	value: "docx",
+											// 	label: (
+											// 		<div className="flex items-center gap-x-2">
+											// 			{t({
+											// 				comment: "File format label in import source selector",
+											// 				message: "Microsoft Word",
+											// 			})}{" "}
+											// 			<Badge>{t`AI`}</Badge>
+											// 		</div>
+											// 	),
+											// },
 										]}
 									/>
 								}

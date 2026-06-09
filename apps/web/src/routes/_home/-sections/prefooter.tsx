@@ -22,7 +22,7 @@ export function Prefooter() {
 					transition={{ duration: 0.45 }}
 				>
 					<h2 className="font-semibold text-2xl tracking-tight md:text-4xl">
-						<Trans>By the community, for the community.</Trans>
+						<Trans>Built for everyone.</Trans>
 					</h2>
 
 					<p className="text-muted-foreground leading-relaxed">
