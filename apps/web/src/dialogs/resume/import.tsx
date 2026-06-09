@@ -228,8 +228,8 @@ export function ImportResumeDialog(_: DialogProps<"resume.import">) {
 				</DialogTitle>
 				<DialogDescription>
 					<Trans>
-						Continue where you left off by importing an existing resume you created using Reactive Resume or any another
-						resume builder. Supported formats include PDF, Microsoft Word, as well as JSON files from Reactive Resume.
+						Continue where you left off by importing an existing resume you created using Resume Builder or any another
+						resume builder. Supported formats include PDF, Microsoft Word, as well as JSON files from Resume Builder.
 					</Trans>
 				</DialogDescription>
 			</DialogHeader>
@@ -262,15 +262,15 @@ export function ImportResumeDialog(_: DialogProps<"resume.import">) {
 											{
 												value: "reactive-resume-json",
 												label: t({
-													comment: "Import source option for current Reactive Resume JSON format",
-													message: "Reactive Resume (JSON)",
+													comment: "Import source option for current Resume Builder JSON format",
+													message: "Resume Builder (JSON)",
 												}),
 											},
 											{
 												value: "reactive-resume-v4-json",
 												label: t({
-													comment: "Import source option for legacy Reactive Resume v4 JSON format",
-													message: "Reactive Resume v4 (JSON)",
+													comment: "Import source option for legacy Resume Builder v4 JSON format",
+													message: "Resume Builder v4 (JSON)",
 												}),
 											},
 											{

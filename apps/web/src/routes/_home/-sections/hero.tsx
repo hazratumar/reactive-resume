@@ -29,7 +29,7 @@ export function Hero() {
 						autoPlay
 						playsInline
 						src="/videos/timelapse.mp4"
-						aria-label={t`Timelapse demonstration of building a resume with Reactive Resume`}
+						aria-label={t`Timelapse demonstration of building a resume with Resume Builder`}
 						className="pointer-events-none size-full rounded-md border object-cover"
 					/>
 
@@ -82,7 +82,7 @@ export function Hero() {
 					transition={{ duration: 0.45, delay: 0.82 }}
 				>
 					<Trans>
-						Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating,
+						Resume Builder is a free and open-source resume builder that simplifies the process of creating, updating,
 						and sharing your resume.
 					</Trans>
 				</m.p>

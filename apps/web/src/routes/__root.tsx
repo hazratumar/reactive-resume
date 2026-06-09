@@ -37,11 +37,11 @@ type RouterContext = {
 	flags: FeatureFlags;
 };
 
-const appName = "Reactive Resume";
+const appName = "Resume Builder";
 const tagline = "A free and open-source resume builder";
 const title = `${appName} — ${tagline}`;
 const description =
-	"Reactive Resume is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.";
+	"Resume Builder is a free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.";
 
 export const Route = createRootRouteWithContext<RouterContext>()({
 	component: RootComponent,
@@ -64,10 +64,10 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 				{ name: "viewport", content: "width=device-width, initial-scale=1" },
 				// Meta Tags
 				{ name: "theme-color", content: "#09090B" },
-				{ name: "application-name", content: "Reactive Resume" },
+				{ name: "application-name", content: "Resume Builder" },
 				{ name: "mobile-web-app-capable", content: "yes" },
 				{ name: "apple-mobile-web-app-capable", content: "yes" },
-				{ name: "apple-mobile-web-app-title", content: "Reactive Resume" },
+				{ name: "apple-mobile-web-app-title", content: "Resume Builder" },
 				{ name: "apple-mobile-web-app-status-bar-style", content: "black-translucent" },
 				// Twitter Tags
 				{ property: "twitter:image", content: `${appUrl}/opengraph/banner.jpg` },
