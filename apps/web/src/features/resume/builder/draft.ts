@@ -1,4 +1,4 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { QueryClient, QueryKey } from "@tanstack/react-query";
 import type { WritableDraft } from "immer";
 import { t } from "@lingui/core/macro";

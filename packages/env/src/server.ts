@@ -2,7 +2,7 @@ import { isAbsolute, join } from "node:path";
 import { createEnv } from "@t3-oss/env-core";
 import { config } from "dotenv";
 import { z } from "zod";
-import { findWorkspaceRoot } from "@reactive-resume/utils/monorepo.node";
+import { findWorkspaceRoot } from "@resume-builder/utils/monorepo.node";
 
 const workspaceRoot = findWorkspaceRoot();
 

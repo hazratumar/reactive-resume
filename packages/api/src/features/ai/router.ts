@@ -1,10 +1,10 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { UIMessage } from "ai";
 import { ORPCError } from "@orpc/client";
 import { type } from "@orpc/server";
 import { AISDKError } from "ai";
 import { flattenError, ZodError, z } from "zod";
-import { storedResumeAnalysisSchema } from "@reactive-resume/schema/resume/analysis";
+import { storedResumeAnalysisSchema } from "@resume-builder/schema/resume/analysis";
 import { protectedProcedure } from "../../context";
 import { aiRequestRateLimit } from "../../middleware/rate-limit";
 import { aiProvidersService } from "../ai-providers/service";

@@ -21,7 +21,7 @@ import {
 } from "@phosphor-icons/react";
 import { m } from "motion/react";
 import { useMemo } from "react";
-import { cn } from "@reactive-resume/utils/style";
+import { cn } from "@resume-builder/utils/style";
 
 type Feature = {
 	id: string;

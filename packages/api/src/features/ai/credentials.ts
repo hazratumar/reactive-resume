@@ -1,5 +1,5 @@
 import { createCipheriv, createDecipheriv, createHash, randomBytes } from "node:crypto";
-import { env } from "@reactive-resume/env/server";
+import { env } from "@resume-builder/env/server";
 
 const CIPHER = "aes-256-gcm";
 const CREDENTIAL_VERSION = "v1";

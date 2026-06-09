@@ -1,5 +1,5 @@
 import * as ResizablePrimitive from "react-resizable-panels";
-import { cn } from "@reactive-resume/utils/style";
+import { cn } from "@resume-builder/utils/style";
 
 function ResizableGroup({ className, ...props }: ResizablePrimitive.GroupProps) {
 	return (

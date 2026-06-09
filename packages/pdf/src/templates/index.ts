@@ -1,4 +1,4 @@
-import type { Template } from "@reactive-resume/schema/templates";
+import type { Template } from "@resume-builder/schema/templates";
 import type { TemplatePage } from "../document";
 import { AzurillPage } from "./azurill/AzurillPage";
 import { BronzorPage } from "./bronzor/BronzorPage";

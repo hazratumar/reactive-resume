@@ -3,16 +3,16 @@ import type { DialogProps } from "@/dialogs/store";
 import { Trans } from "@lingui/react/macro";
 import { PencilSimpleLineIcon, PlusIcon } from "@phosphor-icons/react";
 import { useStore } from "@tanstack/react-form";
-import { summaryItemSchema } from "@reactive-resume/schema/resume/data";
-import { Button } from "@reactive-resume/ui/components/button";
+import { summaryItemSchema } from "@resume-builder/schema/resume/data";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DialogContent,
 	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@reactive-resume/ui/components/dialog";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
+} from "@resume-builder/ui/components/dialog";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
 import { RichInput } from "@/components/input/rich-input";
 import { useDialogStore } from "@/dialogs/store";
 import { useUpdateResumeData } from "@/features/resume/builder/draft";

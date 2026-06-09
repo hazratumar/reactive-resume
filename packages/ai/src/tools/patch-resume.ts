@@ -1,6 +1,6 @@
-import type { JsonPatchOperation } from "@reactive-resume/resume/patch";
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
-import { applyResumePatches } from "@reactive-resume/resume/patch";
+import type { JsonPatchOperation } from "@resume-builder/resume/patch";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
+import { applyResumePatches } from "@resume-builder/resume/patch";
 import { resumePatchOperationsInputSchema } from "./resume-tool-contracts";
 
 export const patchResumeInputSchema = resumePatchOperationsInputSchema;

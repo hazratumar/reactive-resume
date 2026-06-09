@@ -22,7 +22,7 @@ flowchart TD
     API["packages/api feature routers"]
     Auth["packages/auth"]
     MCP["packages/mcp"]
-    PDFServer["@reactive-resume/pdf/server"]
+    PDFServer["@resume-builder/pdf/server"]
   end
 
   Server --> RPC
@@ -67,8 +67,8 @@ flowchart TD
 
 ## Boundary Rules
 
-- Use `@reactive-resume/*` package exports for cross-workspace imports.
-- Do not import another workspace through `apps/**`, `packages/**`, `@reactive-resume/*/src/**`, or a TypeScript path alias to another workspace's `src`.
+- Use `@resume-builder/*` package exports for cross-workspace imports.
+- Do not import another workspace through `apps/**`, `packages/**`, `@resume-builder/*/src/**`, or a TypeScript path alias to another workspace's `src`.
 - Keep browser-only code in web features or explicit browser subpaths.
 - Keep server-only code in server packages or explicit server subpaths.
 - Keep environment-neutral domain packages free of DB, HTTP, DOM, and app imports.
@@ -126,8 +126,8 @@ Avoid reintroducing technical-layer folders such as `services/` or `helpers/` at
 
 `packages/pdf` owns React PDF generation:
 
-- `@reactive-resume/pdf/browser` creates browser PDF blobs.
-- `@reactive-resume/pdf/server` creates server PDF files.
+- `@resume-builder/pdf/browser` creates browser PDF blobs.
+- `@resume-builder/pdf/server` creates server PDF files.
 - Template code stays under `packages/pdf/src/templates`.
 
 Localized section-title resolution stays in the caller because it depends on web/server locale context. PDF.js preview and viewer code stays in `apps/web/src/features/resume`, not in `packages/pdf`.
@@ -140,4 +140,4 @@ DOCX export generation lives in `packages/docx`.
 
 MCP implementation lives in `packages/mcp`. It exposes canonical unprefixed tool names such as `list_resumes`, `read_resume`, and `apply_resume_patch`.
 
-The server process imports MCP from `@reactive-resume/mcp` and injects the in-process oRPC router client. It must not import MCP code from `apps/web/src`.
+The server process imports MCP from `@resume-builder/mcp` and injects the in-process oRPC router client. It must not import MCP code from `apps/web/src`.

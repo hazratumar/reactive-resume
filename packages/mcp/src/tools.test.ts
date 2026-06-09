@@ -6,16 +6,16 @@ const mocks = vi.hoisted(() => ({
 	createResumePdfDownloadUrl: vi.fn(),
 }));
 
-vi.mock("@reactive-resume/api/context", () => ({
+vi.mock("@resume-builder/api/context", () => ({
 	resolveUserFromRequestHeaders: mocks.resolveUserFromRequestHeaders,
 }));
 
-vi.mock("@reactive-resume/api/features/resume/export", () => ({
+vi.mock("@resume-builder/api/features/resume/export", () => ({
 	PDF_DOWNLOAD_URL_EXPIRES_IN_SECONDS: 600,
 	createResumePdfDownloadUrl: mocks.createResumePdfDownloadUrl,
 }));
 
-vi.mock("@reactive-resume/env/server", () => ({
+vi.mock("@resume-builder/env/server", () => ({
 	env: {
 		APP_URL: "https://example.com",
 	},

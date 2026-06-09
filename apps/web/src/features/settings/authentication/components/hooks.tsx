@@ -1,4 +1,4 @@
-import type { AuthProvider } from "@reactive-resume/auth/types";
+import type { AuthProvider } from "@resume-builder/auth/types";
 import type { ReactNode } from "react";
 import { t } from "@lingui/core/macro";
 import {

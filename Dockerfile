@@ -47,7 +47,7 @@ LABEL org.opencontainers.image.description="A free and open-source resume builde
 LABEL org.opencontainers.image.vendor="CodeByUmar"
 LABEL org.opencontainers.image.url="https://resumebuilder.com"
 LABEL org.opencontainers.image.documentation="https://docs.resumebuilder.com"
-LABEL org.opencontainers.image.source="https://github.com/amruthpillai/reactive-resume"
+LABEL org.opencontainers.image.source="https://github.com/amruthpillai/resume-builder"
 
 ENV NODE_ENV="production" \
     PORT=3000 \

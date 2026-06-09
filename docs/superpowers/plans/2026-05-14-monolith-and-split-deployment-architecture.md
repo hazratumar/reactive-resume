@@ -133,7 +133,7 @@ In Docker monolith mode, Node serves the SPA fallback. In split modes, the stati
   - Owns route ownership constants and shared Hono app composition.
   - Exposes `createBackendApp()` and `createMonolithApp()`.
 - Modify `apps/server/src/index.ts`
-  - Becomes a thin Node entrypoint around `@reactive-resume/server/node`.
+  - Becomes a thin Node entrypoint around `@resume-builder/server/node`.
   - Selects monolith/backend-only mode through explicit env/config.
 - Modify `apps/server/src/handlers/*`
   - Move or re-export handlers into `packages/server` only after package boundaries are clear.
@@ -247,7 +247,7 @@ server {
     listen 80;
     server_name example.com;
 
-    root /srv/reactive-resume/web;
+    root /srv/resume-builder/web;
     index index.html;
 
     location ^~ /api/ {
@@ -387,7 +387,7 @@ Create `packages/server/package.json`:
 
 ```json
 {
-	"name": "@reactive-resume/server",
+	"name": "@resume-builder/server",
 	"version": "0.0.0",
 	"type": "module",
 	"private": true,
@@ -399,7 +399,7 @@ Create `packages/server/package.json`:
 		"test": "vitest run --passWithNoTests"
 	},
 	"devDependencies": {
-		"@reactive-resume/config": "workspace:*",
+		"@resume-builder/config": "workspace:*",
 		"@typescript/native-preview": "7.0.0-dev.20260514.1",
 		"typescript": "^6.0.3"
 	}
@@ -410,24 +410,24 @@ Create `packages/server/tsconfig.json`:
 
 ```json
 {
-	"extends": "@reactive-resume/config/tsconfig.base.json"
+	"extends": "@resume-builder/config/tsconfig.base.json"
 }
 ```
 
 Create `packages/server/vitest.config.ts`:
 
 ```ts
-import { createVitestProjectConfig } from "@reactive-resume/config/vitest";
+import { createVitestProjectConfig } from "@resume-builder/config/vitest";
 
 export default createVitestProjectConfig({
-	name: "@reactive-resume/server",
+	name: "@resume-builder/server",
 });
 ```
 
 - [ ] **Step 3: Run the failing tests**
 
 ```bash
-pnpm --filter @reactive-resume/server test -- src/routes/ownership.test.ts
+pnpm --filter @resume-builder/server test -- src/routes/ownership.test.ts
 ```
 
 Expected: fails because `ownership.ts` does not exist.
@@ -488,8 +488,8 @@ export function isStaticRoute(pathname: string) {
 - [ ] **Step 5: Verify route ownership tests**
 
 ```bash
-pnpm --filter @reactive-resume/server test -- src/routes/ownership.test.ts
-pnpm --filter @reactive-resume/server typecheck
+pnpm --filter @resume-builder/server test -- src/routes/ownership.test.ts
+pnpm --filter @resume-builder/server typecheck
 ```
 
 Expected: both pass.
@@ -641,7 +641,7 @@ In `apps/web/vite.config.ts`, remove the `"/auth/oauth"` proxy entry. `/api/auth
 ```bash
 pnpm --filter server test -- src/handlers/auth.test.ts src/index.test.ts
 pnpm --filter server typecheck
-pnpm --filter @reactive-resume/auth typecheck
+pnpm --filter @resume-builder/auth typecheck
 ```
 
 Expected: all pass.
@@ -706,7 +706,7 @@ In `packages/scripts/package.json`, add:
 Add missing dev dependencies:
 
 ```json
-"@reactive-resume/schema": "workspace:*",
+"@resume-builder/schema": "workspace:*",
 "vitest": "^4.1.6",
 "zod": "^4.4.3"
 ```
@@ -714,7 +714,7 @@ Add missing dev dependencies:
 - [ ] **Step 3: Run failing generator test**
 
 ```bash
-pnpm --filter @reactive-resume/scripts test -- schema/generate.test.ts
+pnpm --filter @resume-builder/scripts test -- schema/generate.test.ts
 ```
 
 Expected: fails because `generate.ts` does not exist.
@@ -728,7 +728,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import z from "zod";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
 
 const defaultTargets = [
 	new URL("../../schema/schema.json", import.meta.url),
@@ -762,7 +762,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 In `apps/web/package.json`, add:
 
 ```json
-"prebuild": "pnpm --filter @reactive-resume/scripts schema:generate"
+"prebuild": "pnpm --filter @resume-builder/scripts schema:generate"
 ```
 
 Keep:
@@ -783,7 +783,7 @@ In `apps/server/src/handlers/metadata.ts`, remove:
 
 ```ts
 import z from "zod";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
 ```
 
 and delete `handleSchemaJson()`.
@@ -795,9 +795,9 @@ In `apps/web/vite.config.ts`, remove the `"/schema.json"` proxy entry.
 - [ ] **Step 8: Generate and verify**
 
 ```bash
-pnpm --filter @reactive-resume/scripts schema:generate
-pnpm --filter @reactive-resume/scripts test -- schema/generate.test.ts
-pnpm --filter @reactive-resume/scripts typecheck
+pnpm --filter @resume-builder/scripts schema:generate
+pnpm --filter @resume-builder/scripts test -- schema/generate.test.ts
+pnpm --filter @resume-builder/scripts typecheck
 pnpm --filter server typecheck
 pnpm --filter web build
 test -f apps/web/dist/schema.json
@@ -958,7 +958,7 @@ In `apps/server/src/index.ts`, replace inline app creation with:
 ```ts
 import { pathToFileURL } from "node:url";
 import { serve } from "@hono/node-server";
-import { env } from "@reactive-resume/env/server";
+import { env } from "@resume-builder/env/server";
 import { createBackendApp, createMonolithApp } from "./app";
 import { runStartupChecks } from "./lib/startup";
 
@@ -1071,9 +1071,9 @@ git commit -m "chore(docker): keep monolith server mode as default"
 - [ ] **Step 1: Run focused tests**
 
 ```bash
-pnpm --filter @reactive-resume/server test
+pnpm --filter @resume-builder/server test
 pnpm --filter server test -- src/handlers/auth.test.ts src/index.test.ts src/app.test.ts
-pnpm --filter @reactive-resume/scripts test -- schema/generate.test.ts
+pnpm --filter @resume-builder/scripts test -- schema/generate.test.ts
 ```
 
 Expected: all pass.
@@ -1081,10 +1081,10 @@ Expected: all pass.
 - [ ] **Step 2: Run focused typechecks**
 
 ```bash
-pnpm --filter @reactive-resume/server typecheck
+pnpm --filter @resume-builder/server typecheck
 pnpm --filter server typecheck
-pnpm --filter @reactive-resume/scripts typecheck
-pnpm --filter @reactive-resume/auth typecheck
+pnpm --filter @resume-builder/scripts typecheck
+pnpm --filter @resume-builder/auth typecheck
 pnpm --filter web typecheck
 ```
 
@@ -1093,7 +1093,7 @@ Expected: all pass.
 - [ ] **Step 3: Verify static schema build**
 
 ```bash
-pnpm --filter @reactive-resume/scripts schema:generate
+pnpm --filter @resume-builder/scripts schema:generate
 pnpm --filter web build
 test -f apps/web/dist/schema.json
 cmp packages/schema/schema.json apps/web/public/schema.json

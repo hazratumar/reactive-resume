@@ -1,7 +1,7 @@
 import { t } from "@lingui/core/macro";
 import { BrainIcon } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
-import { Separator } from "@reactive-resume/ui/components/separator";
+import { Separator } from "@resume-builder/ui/components/separator";
 import { IntegrationsSettingsPage } from "@/features/settings/integrations";
 import { DashboardHeader } from "../../-components/header";
 

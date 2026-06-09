@@ -1,10 +1,10 @@
 {
-	"extends": "@reactive-resume/config/tsconfig.base.json",
+	"extends": "@resume-builder/config/tsconfig.base.json",
 	"compilerOptions": {
 		"jsx": "react-jsx",
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"paths": {
-			"@reactive-resume/ui/*": ["./src/*"]
+			"@resume-builder/ui/*": ["./src/*"]
 		}
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],

@@ -1,7 +1,7 @@
-import type { JsonPatchOperation } from "@reactive-resume/resume/patch";
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { JsonPatchOperation } from "@resume-builder/resume/patch";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import z from "zod";
-import { applyResumePatches, jsonPatchOperationSchema } from "@reactive-resume/resume/patch";
+import { applyResumePatches, jsonPatchOperationSchema } from "@resume-builder/resume/patch";
 
 const jsonPointerToken = /~1|~0/g;
 

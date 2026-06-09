@@ -36,7 +36,7 @@ describe("InformationSectionBuilder", () => {
 	it("links to the OpenCollective donation page", () => {
 		renderInfo();
 		const donateLink = screen.getByText("Donate to Reactive Resume").closest("a");
-		expect(donateLink?.getAttribute("href")).toBe("http://opencollective.com/reactive-resume");
+		expect(donateLink?.getAttribute("href")).toBe("http://opencollective.com/resume-builder");
 	});
 
 	it("includes external resource links (docs, source, bugs, translations, sponsors)", () => {

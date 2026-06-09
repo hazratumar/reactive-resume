@@ -1,6 +1,6 @@
 import type { HTMLElement, Node } from "node-html-parser";
 import { NodeType, parse } from "node-html-parser";
-import { isDarkColor } from "@reactive-resume/utils/color";
+import { isDarkColor } from "@resume-builder/utils/color";
 
 export const richTextMarkClassName = "rr-pdf-mark";
 

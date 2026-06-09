@@ -15,9 +15,9 @@ const dbMock = vi.hoisted(() => {
 	return { select };
 });
 
-vi.mock("@reactive-resume/env/server", () => ({ env: envMock }));
-vi.mock("@reactive-resume/db/client", () => ({ db: dbMock }));
-vi.mock("@reactive-resume/db/schema", () => ({ user: { __table: "user" }, resume: { __table: "resume" } }));
+vi.mock("@resume-builder/env/server", () => ({ env: envMock }));
+vi.mock("@resume-builder/db/client", () => ({ db: dbMock }));
+vi.mock("@resume-builder/db/schema", () => ({ user: { __table: "user" }, resume: { __table: "resume" } }));
 vi.mock("drizzle-orm", () => ({ count: () => "count(*)" }));
 
 const fetchMock = vi.fn();

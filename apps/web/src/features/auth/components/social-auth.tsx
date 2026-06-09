@@ -5,9 +5,9 @@ import { FingerprintIcon, GithubLogoIcon, GoogleLogoIcon, LinkedinLogoIcon, Vaul
 import { useQuery } from "@tanstack/react-query";
 import { useRouter } from "@tanstack/react-router";
 import { toast } from "sonner";
-import { Button } from "@reactive-resume/ui/components/button";
-import { Skeleton } from "@reactive-resume/ui/components/skeleton";
-import { cn } from "@reactive-resume/utils/style";
+import { Button } from "@resume-builder/ui/components/button";
+import { Skeleton } from "@resume-builder/ui/components/skeleton";
+import { cn } from "@resume-builder/utils/style";
 import { authClient } from "@/libs/auth/client";
 import { orpc } from "@/libs/orpc/client";
 

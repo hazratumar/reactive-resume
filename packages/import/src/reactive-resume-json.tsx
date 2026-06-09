@@ -1,6 +1,6 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import { flattenError, ZodError } from "zod";
-import { resumeDataSchema, sectionTypeSchema } from "@reactive-resume/schema/resume/data";
+import { resumeDataSchema, sectionTypeSchema } from "@resume-builder/schema/resume/data";
 
 const BUILT_IN_LAYOUT_SECTION_IDS = sectionTypeSchema.options.filter((section) => section !== "cover-letter");
 

@@ -2,9 +2,9 @@ import type { NotFoundRouteProps } from "@tanstack/react-router";
 import { Trans } from "@lingui/react/macro";
 import { ArrowLeftIcon, WarningIcon } from "@phosphor-icons/react";
 import { Link } from "@tanstack/react-router";
-import { Alert, AlertDescription, AlertTitle } from "@reactive-resume/ui/components/alert";
-import { BrandIcon } from "@reactive-resume/ui/components/brand-icon";
-import { buttonVariants } from "@reactive-resume/ui/components/button";
+import { Alert, AlertDescription, AlertTitle } from "@resume-builder/ui/components/alert";
+import { BrandIcon } from "@resume-builder/ui/components/brand-icon";
+import { buttonVariants } from "@resume-builder/ui/components/button";
 
 export function NotFoundScreen({ routeId }: NotFoundRouteProps) {
 	return (

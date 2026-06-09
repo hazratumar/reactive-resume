@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-vi.mock("@reactive-resume/env/server", () => ({
+vi.mock("@resume-builder/env/server", () => ({
 	env: {
 		APP_URL: "https://app.example.com/",
 	},

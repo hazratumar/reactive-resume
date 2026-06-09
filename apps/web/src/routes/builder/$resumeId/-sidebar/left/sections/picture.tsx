@@ -5,17 +5,17 @@ import { EyeIcon, EyeSlashIcon, TrashSimpleIcon, UploadSimpleIcon } from "@phosp
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useEffect, useRef } from "react";
 import { toast } from "sonner";
-import { pictureSchema } from "@reactive-resume/schema/resume/data";
-import { Button } from "@reactive-resume/ui/components/button";
-import { ButtonGroup } from "@reactive-resume/ui/components/button-group";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
-import { Input } from "@reactive-resume/ui/components/input";
+import { pictureSchema } from "@resume-builder/schema/resume/data";
+import { Button } from "@resume-builder/ui/components/button";
+import { ButtonGroup } from "@resume-builder/ui/components/button-group";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
+import { Input } from "@resume-builder/ui/components/input";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
 	InputGroupText,
-} from "@reactive-resume/ui/components/input-group";
+} from "@resume-builder/ui/components/input-group";
 import { ColorPicker } from "@/components/input/color-picker";
 import { useCurrentResume, useUpdateResumeData } from "@/features/resume/builder/draft";
 import { useSyncFormValues } from "@/hooks/use-sync-form-values";

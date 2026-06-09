@@ -1,11 +1,11 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import { deepmergeCustom } from "deepmerge-ts";
 import { jsonrepair } from "jsonrepair";
 import { flattenError, ZodError } from "zod";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
-import { isObject } from "@reactive-resume/utils/sanitize";
-import { generateId } from "@reactive-resume/utils/string";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
+import { isObject } from "@resume-builder/utils/sanitize";
+import { generateId } from "@resume-builder/utils/string";
 import { buildAiExtractionTemplate } from "./extraction-template";
 
 const aiExtractionTemplate = buildAiExtractionTemplate();

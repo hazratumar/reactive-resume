@@ -1,11 +1,11 @@
 import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { m } from "motion/react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@reactive-resume/ui/components/accordion";
-import { buttonVariants } from "@reactive-resume/ui/components/button";
-import { cn } from "@reactive-resume/utils/style";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@resume-builder/ui/components/accordion";
+import { buttonVariants } from "@resume-builder/ui/components/button";
+import { cn } from "@resume-builder/utils/style";
 
-const crowdinUrl = "https://crowdin.com/project/reactive-resume";
+const crowdinUrl = "https://crowdin.com/project/resume-builder";
 
 type FAQItemData = {
 	question: string;

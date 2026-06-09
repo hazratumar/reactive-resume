@@ -1,6 +1,6 @@
 // @vitest-environment happy-dom
 
-import type { StyleRule } from "@reactive-resume/schema/resume/data";
+import type { StyleRule } from "@resume-builder/schema/resume/data";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { beforeAll, beforeEach, describe, expect, it, vi } from "vitest";
 import { i18n } from "@lingui/core";

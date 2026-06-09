@@ -12,7 +12,7 @@ const envMock = vi.hoisted(() => ({
 	FLAG_DISABLE_IMAGE_PROCESSING: false,
 }));
 
-vi.mock("@reactive-resume/env/server", () => ({ env: envMock }));
+vi.mock("@resume-builder/env/server", () => ({ env: envMock }));
 // sharp is exercised by processImageForUpload; keep it out of the import graph entirely
 // because resolving it loads native bindings we can't rely on in CI.
 vi.mock("sharp", () => {

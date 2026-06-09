@@ -3,6 +3,6 @@ import { fileURLToPath } from "node:url";
 import { createVitestProjectConfig } from "../../vitest.shared";
 
 export default createVitestProjectConfig({
-	name: "@reactive-resume/ai",
+	name: "@resume-builder/ai",
 	dirname: fileURLToPath(new URL(".", import.meta.url)),
 });

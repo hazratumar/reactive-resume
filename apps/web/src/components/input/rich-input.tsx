@@ -50,8 +50,8 @@ import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
 import { match } from "ts-pattern";
 import z from "zod";
-import { Button } from "@reactive-resume/ui/components/button";
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@reactive-resume/ui/components/dialog";
+import { Button } from "@resume-builder/ui/components/button";
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@resume-builder/ui/components/dialog";
 import {
 	DropdownMenu,
 	DropdownMenuCheckboxItem,
@@ -59,11 +59,11 @@ import {
 	DropdownMenuItem,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@reactive-resume/ui/components/dropdown-menu";
-import { PopoverHeader, PopoverTitle, PopoverTrigger } from "@reactive-resume/ui/components/popover";
-import { Toggle } from "@reactive-resume/ui/components/toggle";
-import { isDarkColor } from "@reactive-resume/utils/color";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/dropdown-menu";
+import { PopoverHeader, PopoverTitle, PopoverTrigger } from "@resume-builder/ui/components/popover";
+import { Toggle } from "@resume-builder/ui/components/toggle";
+import { isDarkColor } from "@resume-builder/utils/color";
+import { cn } from "@resume-builder/utils/style";
 import { usePrompt } from "@/hooks/use-prompt";
 import { isRTL } from "@/libs/locale";
 import { ColorPicker } from "./color-picker";

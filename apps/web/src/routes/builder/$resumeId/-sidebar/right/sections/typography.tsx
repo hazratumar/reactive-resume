@@ -2,15 +2,15 @@ import type { ReactNode } from "react";
 import type z from "zod";
 import { Trans } from "@lingui/react/macro";
 import { useStore } from "@tanstack/react-form";
-import { typographySchema } from "@reactive-resume/schema/resume/data";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
+import { typographySchema } from "@resume-builder/schema/resume/data";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
 	InputGroupText,
-} from "@reactive-resume/ui/components/input-group";
-import { Separator } from "@reactive-resume/ui/components/separator";
+} from "@resume-builder/ui/components/input-group";
+import { Separator } from "@resume-builder/ui/components/separator";
 import { FontFamilyCombobox, FontWeightCombobox, getNextWeights } from "@/components/typography/combobox";
 import { useResume, useUpdateResumeData } from "@/features/resume/builder/draft";
 import { useSyncFormValues } from "@/hooks/use-sync-form-values";

@@ -21,7 +21,7 @@ export function emptyAgentStream() {
 
 function getAgentStreamContext() {
 	streamContext ??= createResumableStreamContext({
-		keyPrefix: "reactive-resume:agent-stream",
+		keyPrefix: "resume-builder:agent-stream",
 		waitUntil: null,
 	});
 

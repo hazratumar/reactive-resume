@@ -1,4 +1,4 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import { ORPCError } from "@orpc/client";
 
 /**

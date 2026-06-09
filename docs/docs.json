@@ -150,7 +150,7 @@
         {
           "icon": "github",
           "anchor": "Source Code",
-          "href": "https://github.com/amruthpillai/reactive-resume"
+          "href": "https://github.com/amruthpillai/resume-builder"
         }
       ]
     }
@@ -163,7 +163,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "https://github.com/amruthpillai/reactive-resume/issues"
+        "href": "https://github.com/amruthpillai/resume-builder/issues"
       }
     ],
     "primary": {
@@ -178,7 +178,7 @@
   "footer": {
     "socials": {
       "website": "https://resumebuilder.com",
-      "github": "https://github.com/amruthpillai/reactive-resume"
+      "github": "https://github.com/amruthpillai/resume-builder"
     }
   }
 }

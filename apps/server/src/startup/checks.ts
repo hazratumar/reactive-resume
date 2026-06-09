@@ -5,8 +5,8 @@ import { fileURLToPath } from "node:url";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { migrate } from "drizzle-orm/node-postgres/migrator";
 import { Pool } from "pg";
-import { env } from "@reactive-resume/env/server";
-import { getLocalDataDirectory } from "@reactive-resume/utils/monorepo.node";
+import { env } from "@resume-builder/env/server";
+import { getLocalDataDirectory } from "@resume-builder/utils/monorepo.node";
 
 function resolveFromCurrentModule(relativePath: string) {
 	return fileURLToPath(new URL(relativePath, import.meta.url));

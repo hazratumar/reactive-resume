@@ -1,5 +1,5 @@
-import type { AIProvider } from "@reactive-resume/ai/types";
-import { AI_PROVIDER_DEFAULT_BASE_URLS } from "@reactive-resume/ai/types";
+import type { AIProvider } from "@resume-builder/ai/types";
+import { AI_PROVIDER_DEFAULT_BASE_URLS } from "@resume-builder/ai/types";
 
 type AiProviderCapabilityInput = {
 	provider: AIProvider;

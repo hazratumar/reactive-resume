@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/react/macro";
-import { cn } from "@reactive-resume/utils/style";
+import { cn } from "@resume-builder/utils/style";
 
 type Props = React.ComponentProps<"div">;
 
@@ -10,7 +10,7 @@ export function Copyright({ className, ...props }: Props) {
 				<Trans>
 					Licensed under{" "}
 					<a
-						href="https://github.com/AmruthPillai/Reactive-Resume/blob/main/LICENSE"
+						href="https://github.com/AmruthPillai/resume-builder/blob/main/LICENSE"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="font-medium underline underline-offset-2"

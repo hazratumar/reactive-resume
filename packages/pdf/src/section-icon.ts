@@ -1,5 +1,5 @@
-import type { ResumeData, SectionType } from "@reactive-resume/schema/resume/data";
-import { getDefaultSectionIconName } from "@reactive-resume/schema/resume/section-icons";
+import type { ResumeData, SectionType } from "@resume-builder/schema/resume/data";
+import { getDefaultSectionIconName } from "@resume-builder/schema/resume/section-icons";
 
 type RenderData = ResumeData & {
 	resolveSectionTitle?: unknown;

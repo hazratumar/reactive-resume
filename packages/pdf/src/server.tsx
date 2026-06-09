@@ -1,5 +1,5 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
-import type { Template } from "@reactive-resume/schema/templates";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
+import type { Template } from "@resume-builder/schema/templates";
 import type { SectionTitleResolver } from "./section-title";
 import { createElement } from "react";
 import { ResumeDocument } from "./document";

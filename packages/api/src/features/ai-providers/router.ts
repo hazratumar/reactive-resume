@@ -2,7 +2,7 @@ import type { AiProviderResponse } from "./service";
 import { ORPCError } from "@orpc/client";
 import { type } from "@orpc/server";
 import z from "zod";
-import { aiProviderSchema } from "@reactive-resume/ai/types";
+import { aiProviderSchema } from "@resume-builder/ai/types";
 import { protectedProcedure } from "../../context";
 import { aiRequestRateLimit } from "../../middleware/rate-limit";
 import { aiProvidersService } from "./service";

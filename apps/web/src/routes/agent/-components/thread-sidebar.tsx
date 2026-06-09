@@ -14,15 +14,15 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useMemo } from "react";
 import { toast } from "sonner";
-import { Button } from "@reactive-resume/ui/components/button";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "@reactive-resume/ui/components/dropdown-menu";
-import { ScrollArea } from "@reactive-resume/ui/components/scroll-area";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/dropdown-menu";
+import { ScrollArea } from "@resume-builder/ui/components/scroll-area";
+import { cn } from "@resume-builder/utils/style";
 import { useConfirm } from "@/hooks/use-confirm";
 import { getOrpcErrorMessage } from "@/libs/error-message";
 import { orpc } from "@/libs/orpc/client";

@@ -1,5 +1,5 @@
 import { WebStandardStreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/webStandardStreamableHttp.js";
-import { env } from "@reactive-resume/env/server";
+import { env } from "@resume-builder/env/server";
 import { AuthError, authenticateRequest } from "./auth";
 import { createMcpServer } from "./server";
 

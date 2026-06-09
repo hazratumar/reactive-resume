@@ -9,7 +9,7 @@ const rootPackageJson = JSON.parse(readFileSync(new URL("../../package.json", im
 };
 
 const shouldExternalizeThirdParty = (id: string) => {
-	if (id.startsWith("@reactive-resume/")) return false;
+	if (id.startsWith("@resume-builder/")) return false;
 	if (id.startsWith("@/") || id.startsWith(".") || id.startsWith("/") || id.startsWith("\0")) return false;
 
 	return true;
@@ -44,7 +44,7 @@ export default defineConfig({
 	define: { __APP_VERSION__: JSON.stringify(rootPackageJson.version ?? "0.0.0") },
 	outExtensions: () => ({ js: ".mjs" }),
 	deps: {
-		alwaysBundle: [/^@reactive-resume\//],
+		alwaysBundle: [/^@resume-builder\//],
 		neverBundle: shouldExternalizeThirdParty,
 	},
 	plugins: [promptAssetsPlugin],

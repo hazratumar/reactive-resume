@@ -1,15 +1,15 @@
 import type z from "zod";
 import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
-import { pageSchema } from "@reactive-resume/schema/resume/data";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
+import { pageSchema } from "@resume-builder/schema/resume/data";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
 	InputGroupText,
-} from "@reactive-resume/ui/components/input-group";
-import { Switch } from "@reactive-resume/ui/components/switch";
+} from "@resume-builder/ui/components/input-group";
+import { Switch } from "@resume-builder/ui/components/switch";
 import { Combobox } from "@/components/ui/combobox";
 import { getLocaleOptions } from "@/features/locale/combobox";
 import { useResume, useUpdateResumeData } from "@/features/resume/builder/draft";

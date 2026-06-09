@@ -1,5 +1,5 @@
 import z from "zod";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
 import { appVersion } from "../app-version";
 
 export function handleSchemaJson() {

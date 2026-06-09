@@ -1,7 +1,7 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { CSSProperties } from "react";
-import { Spinner } from "@reactive-resume/ui/components/spinner";
-import { cn } from "@reactive-resume/utils/style";
+import { Spinner } from "@resume-builder/ui/components/spinner";
+import { cn } from "@resume-builder/utils/style";
 
 export type ResumePreviewProps = {
 	className?: string;

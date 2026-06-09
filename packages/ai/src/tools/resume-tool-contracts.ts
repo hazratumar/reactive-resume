@@ -1,6 +1,6 @@
-import type { JsonPatchOperation } from "@reactive-resume/resume/patch";
+import type { JsonPatchOperation } from "@resume-builder/resume/patch";
 import z from "zod";
-import { jsonPatchOperationSchema } from "@reactive-resume/resume/patch";
+import { jsonPatchOperationSchema } from "@resume-builder/resume/patch";
 
 export const resumePatchOperationsSchema = z
 	.array(jsonPatchOperationSchema)

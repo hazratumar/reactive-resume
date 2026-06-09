@@ -1,7 +1,7 @@
 import { Trans } from "@lingui/react/macro";
 import { ArrowRightIcon, ChatCircleDotsIcon } from "@phosphor-icons/react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Button } from "@reactive-resume/ui/components/button";
+import { Button } from "@resume-builder/ui/components/button";
 import { AgentThreadSidebar } from "./-components/thread-sidebar";
 
 export const Route = createFileRoute("/agent/")({

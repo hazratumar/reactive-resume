@@ -1,8 +1,8 @@
 import type * as React from "react";
 import { createFormHook, createFormHookContexts } from "@tanstack/react-form";
-import { FormControl, FormDescription, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
-import { Input } from "@reactive-resume/ui/components/input";
-import { InputGroupInput } from "@reactive-resume/ui/components/input-group";
+import { FormControl, FormDescription, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
+import { Input } from "@resume-builder/ui/components/input";
+import { InputGroupInput } from "@resume-builder/ui/components/input-group";
 
 type FieldFrameProps = {
 	label?: React.ReactNode;

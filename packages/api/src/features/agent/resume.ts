@@ -1,4 +1,4 @@
-import { slugify } from "@reactive-resume/utils/string";
+import { slugify } from "@resume-builder/utils/string";
 
 const AI_DRAFT_SUFFIX = " - AI Draft";
 

@@ -1,11 +1,11 @@
 import type { LeftSidebarSection } from "@/libs/resume/section";
 import { Fragment, useCallback, useRef } from "react";
 import { match } from "ts-pattern";
-import { Avatar, AvatarFallback, AvatarImage } from "@reactive-resume/ui/components/avatar";
-import { Button } from "@reactive-resume/ui/components/button";
-import { ScrollArea } from "@reactive-resume/ui/components/scroll-area";
-import { Separator } from "@reactive-resume/ui/components/separator";
-import { getInitials } from "@reactive-resume/utils/string";
+import { Avatar, AvatarFallback, AvatarImage } from "@resume-builder/ui/components/avatar";
+import { Button } from "@resume-builder/ui/components/button";
+import { ScrollArea } from "@resume-builder/ui/components/scroll-area";
+import { Separator } from "@resume-builder/ui/components/separator";
+import { getInitials } from "@resume-builder/utils/string";
 import { UserDropdownMenu } from "@/features/user/dropdown-menu";
 import { getSectionIcon, getSectionTitle, leftSidebarSections } from "@/libs/resume/section";
 import { BuilderSidebarEdge } from "../../-components/edge";

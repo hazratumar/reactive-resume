@@ -1,10 +1,10 @@
-import type { SectionType } from "@reactive-resume/schema/resume/data";
+import type { SectionType } from "@resume-builder/schema/resume/data";
 import type { LeftSidebarSection } from "@/libs/resume/section";
 import { CaretDownIcon } from "@phosphor-icons/react";
-import { getDefaultSectionIconName } from "@reactive-resume/schema/resume/section-icons";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@reactive-resume/ui/components/accordion";
-import { Button } from "@reactive-resume/ui/components/button";
-import { cn } from "@reactive-resume/utils/style";
+import { getDefaultSectionIconName } from "@resume-builder/schema/resume/section-icons";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@resume-builder/ui/components/accordion";
+import { Button } from "@resume-builder/ui/components/button";
+import { cn } from "@resume-builder/utils/style";
 import { IconPicker } from "@/components/input/icon-picker";
 import { useCurrentResume, useUpdateResumeData } from "@/features/resume/builder/draft";
 import { getSectionIcon, getSectionTitle } from "@/libs/resume/section";

@@ -1,23 +1,23 @@
-import type { RoleItem } from "@reactive-resume/schema/resume/data";
+import type { RoleItem } from "@resume-builder/schema/resume/data";
 import type z from "zod";
 import type { DialogProps } from "@/dialogs/store";
 import { Trans } from "@lingui/react/macro";
 import { PencilSimpleLineIcon, PlusIcon, RowsIcon, TrashSimpleIcon } from "@phosphor-icons/react";
 import { useStore } from "@tanstack/react-form";
 import { AnimatePresence, Reorder, useDragControls } from "motion/react";
-import { experienceItemSchema } from "@reactive-resume/schema/resume/data";
-import { Button } from "@reactive-resume/ui/components/button";
+import { experienceItemSchema } from "@resume-builder/schema/resume/data";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DialogContent,
 	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@reactive-resume/ui/components/dialog";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
-import { Input } from "@reactive-resume/ui/components/input";
-import { Switch } from "@reactive-resume/ui/components/switch";
-import { generateId } from "@reactive-resume/utils/string";
+} from "@resume-builder/ui/components/dialog";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
+import { Input } from "@resume-builder/ui/components/input";
+import { Switch } from "@resume-builder/ui/components/switch";
+import { generateId } from "@resume-builder/utils/string";
 import { RichInput } from "@/components/input/rich-input";
 import { URLInput } from "@/components/input/url-input";
 import { useDialogStore } from "@/dialogs/store";

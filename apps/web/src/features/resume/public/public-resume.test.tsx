@@ -1,12 +1,12 @@
 // @vitest-environment happy-dom
 
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { ReactNode } from "react";
 import { render, screen } from "@testing-library/react";
 import { beforeAll, beforeEach, describe, expect, it, vi } from "vitest";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
-import { sampleResumeData } from "@reactive-resume/schema/resume/sample";
+import { sampleResumeData } from "@resume-builder/schema/resume/sample";
 
 type PdfViewerProps = {
 	className?: string;
@@ -37,7 +37,7 @@ vi.mock("@tanstack/react-router", () => ({
 	}),
 }));
 
-vi.mock("@reactive-resume/utils/file", () => ({
+vi.mock("@resume-builder/utils/file", () => ({
 	downloadWithAnchor: publicResumeMock.downloadWithAnchor,
 	generateFilename: publicResumeMock.generateFilename,
 }));

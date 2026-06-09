@@ -5,11 +5,11 @@
     "description": "Reactive Resume API",
     "license": {
       "name": "MIT",
-      "url": "https://github.com/amruthpillai/reactive-resume/blob/main/LICENSE"
+      "url": "https://github.com/amruthpillai/resume-builder/blob/main/LICENSE"
     },
     "contact": {
       "name": "CodeByUmar",
-      "email": "hello@amruthpillai.com",
+      "email": "codesbyumar@gmail.com",
       "url": "https://amruthpillai.com"
     }
   },

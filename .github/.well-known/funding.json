@@ -5,7 +5,7 @@
     "type": "individual",
     "role": "maintainer",
     "name": "CodeByUmar",
-    "email": "hello@amruthpillai.com",
+    "email": "codesbyumar@gmail.com",
     "description": "Software Engineer",
     "webpageUrl": {
       "url": "https://resumebuilder.com/funding.json"
@@ -13,15 +13,15 @@
   },
   "projects": [
     {
-      "guid": "reactive-resume",
+      "guid": "resume-builder",
       "name": "Reactive Resume",
       "description": "A free and open-source resume builder that simplifies the process of creating, updating, and sharing your resume.",
       "webpageUrl": {
         "url": "https://resumebuilder.com"
       },
       "repositoryUrl": {
-        "url": "https://github.com/amruthpillai/reactive-resume",
-        "wellKnown": "https://github.com/amruthpillai/reactive-resume/blob/main/.github/.well-known/funding-manifest-urls"
+        "url": "https://github.com/amruthpillai/resume-builder",
+        "wellKnown": "https://github.com/amruthpillai/resume-builder/blob/main/.github/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:MIT"],
       "tags": ["data", "design", "productivity", "resume-builder"]
@@ -61,7 +61,7 @@
         "guid": "open-collective",
         "type": "payment-provider",
         "description": "Open Collective",
-        "address": "https://opencollective.com/reactive-resume/donate"
+        "address": "https://opencollective.com/resume-builder/donate"
       }
     ]
   }

@@ -1,4 +1,4 @@
-import type { AIProvider } from "@reactive-resume/ai/types";
+import type { AIProvider } from "@resume-builder/ai/types";
 import { describe, expect, it } from "vitest";
 import { buildAgentInstructions, buildAgentTools } from "./tools";
 

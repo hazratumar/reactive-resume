@@ -27,7 +27,7 @@ describe("createRootStructuredDataScript", () => {
 	it("serializes JSON-LD using the structured data script id", () => {
 		const script = createRootStructuredDataScript("https://resumebuilder.com/");
 
-		expect(script.id).toBe("reactive-resume-structured-data");
+		expect(script.id).toBe("resume-builder-structured-data");
 		expect(script.type).toBe("application/ld+json");
 		expect(JSON.parse(script.children)).toMatchObject({ "@context": "https://schema.org" });
 	});

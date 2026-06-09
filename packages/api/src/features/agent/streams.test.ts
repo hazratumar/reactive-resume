@@ -2,8 +2,8 @@ import { describe, expect, it, vi } from "vitest";
 import { claimActiveAgentRun, clearActiveAgentRunIfCurrent } from "./runs";
 import { createAgentStreamLifecycle, emptyAgentStream } from "./streams";
 
-vi.mock("@reactive-resume/db/client", () => ({ db: { update: vi.fn() } }));
-vi.mock("@reactive-resume/db/schema", () => ({
+vi.mock("@resume-builder/db/client", () => ({ db: { update: vi.fn() } }));
+vi.mock("@resume-builder/db/schema", () => ({
 	agentThread: {
 		id: "agent_threads.id",
 		userId: "agent_threads.user_id",

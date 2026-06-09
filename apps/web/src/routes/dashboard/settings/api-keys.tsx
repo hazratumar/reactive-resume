@@ -1,7 +1,7 @@
 import { t } from "@lingui/core/macro";
 import { KeyIcon } from "@phosphor-icons/react";
 import { createFileRoute } from "@tanstack/react-router";
-import { Separator } from "@reactive-resume/ui/components/separator";
+import { Separator } from "@resume-builder/ui/components/separator";
 import { ApiKeysSettingsPage } from "@/features/settings/pages/api-keys";
 import { DashboardHeader } from "../-components/header";
 

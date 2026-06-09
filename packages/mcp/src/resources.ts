@@ -1,8 +1,8 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { RouterClient } from "@orpc/server";
-import type router from "@reactive-resume/api/routers";
+import type router from "@resume-builder/api/routers";
 import { ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
-import schemaJSON from "@reactive-resume/schema/schema.json";
+import schemaJSON from "@resume-builder/schema/schema.json";
 import { MCP_TOOL_NAME as T } from "./mcp-tool-names";
 
 export function registerResources(server: McpServer, client: RouterClient<typeof router>) {

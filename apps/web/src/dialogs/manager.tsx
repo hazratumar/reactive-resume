@@ -1,4 +1,4 @@
-import { Dialog } from "@reactive-resume/ui/components/dialog";
+import { Dialog } from "@resume-builder/ui/components/dialog";
 import { renderDialog } from "./renderers";
 import { useDialogStore } from "./store";
 

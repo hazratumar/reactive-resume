@@ -1,4 +1,4 @@
-import type { AIProvider } from "@reactive-resume/ai/types";
+import type { AIProvider } from "@resume-builder/ai/types";
 import type { ComboboxOption } from "@/components/ui/combobox";
 import type { RouterOutput } from "@/libs/orpc/client";
 import { t } from "@lingui/core/macro";
@@ -8,14 +8,14 @@ import { CheckCircleIcon, KeyIcon, PlusIcon, TrashIcon, WarningCircleIcon, XCirc
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useMemo, useState } from "react";
 import { toast } from "sonner";
-import { AI_PROVIDER_DEFAULT_BASE_URLS } from "@reactive-resume/ai/types";
-import { Badge } from "@reactive-resume/ui/components/badge";
-import { Button } from "@reactive-resume/ui/components/button";
-import { Input } from "@reactive-resume/ui/components/input";
-import { Label } from "@reactive-resume/ui/components/label";
-import { Spinner } from "@reactive-resume/ui/components/spinner";
-import { Switch } from "@reactive-resume/ui/components/switch";
-import { cn } from "@reactive-resume/utils/style";
+import { AI_PROVIDER_DEFAULT_BASE_URLS } from "@resume-builder/ai/types";
+import { Badge } from "@resume-builder/ui/components/badge";
+import { Button } from "@resume-builder/ui/components/button";
+import { Input } from "@resume-builder/ui/components/input";
+import { Label } from "@resume-builder/ui/components/label";
+import { Spinner } from "@resume-builder/ui/components/spinner";
+import { Switch } from "@resume-builder/ui/components/switch";
+import { cn } from "@resume-builder/utils/style";
 import { Combobox } from "@/components/ui/combobox";
 import { getOrpcErrorMessage } from "@/libs/error-message";
 import { orpc } from "@/libs/orpc/client";

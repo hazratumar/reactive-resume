@@ -1,16 +1,16 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import type { RouterClient } from "@orpc/server";
-import type router from "@reactive-resume/api/routers";
+import type router from "@resume-builder/api/routers";
 import z from "zod";
-import { resumePatchOperationsSchema } from "@reactive-resume/ai/tools/resume-tool-contracts";
-import { resolveUserFromRequestHeaders } from "@reactive-resume/api/context";
+import { resumePatchOperationsSchema } from "@resume-builder/ai/tools/resume-tool-contracts";
+import { resolveUserFromRequestHeaders } from "@resume-builder/api/context";
 import {
 	createResumePdfDownloadUrl,
 	MAX_PDF_DOWNLOAD_URL_TTL_SECONDS,
-} from "@reactive-resume/api/features/resume/export";
-import { env } from "@reactive-resume/env/server";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+} from "@resume-builder/api/features/resume/export";
+import { env } from "@resume-builder/env/server";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
 import { MCP_TOOL_NAME } from "./mcp-tool-names";
 import { TOOL_ANNOTATIONS } from "./tool-annotations";
 

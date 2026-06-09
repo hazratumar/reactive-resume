@@ -1,9 +1,9 @@
 // @vitest-environment happy-dom
 
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import { render, screen, waitFor } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { sampleResumeData } from "@reactive-resume/schema/resume/sample";
+import { sampleResumeData } from "@resume-builder/schema/resume/sample";
 import { ResumePreviewClient } from "./preview.browser";
 
 const previewMock = vi.hoisted(() => ({

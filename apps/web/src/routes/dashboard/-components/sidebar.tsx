@@ -14,8 +14,8 @@ import {
 } from "@phosphor-icons/react";
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, m } from "motion/react";
-import { Avatar, AvatarFallback, AvatarImage } from "@reactive-resume/ui/components/avatar";
-import { BrandIcon } from "@reactive-resume/ui/components/brand-icon";
+import { Avatar, AvatarFallback, AvatarImage } from "@resume-builder/ui/components/avatar";
+import { BrandIcon } from "@resume-builder/ui/components/brand-icon";
 import {
 	Sidebar,
 	SidebarContent,
@@ -30,8 +30,8 @@ import {
 	SidebarRail,
 	SidebarSeparator,
 	useSidebarState,
-} from "@reactive-resume/ui/components/sidebar";
-import { getInitials } from "@reactive-resume/utils/string";
+} from "@resume-builder/ui/components/sidebar";
+import { getInitials } from "@resume-builder/utils/string";
 import { Copyright } from "@/components/ui/copyright";
 import { UserDropdownMenu } from "@/features/user/dropdown-menu";
 

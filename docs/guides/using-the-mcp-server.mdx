@@ -45,7 +45,7 @@ Most OAuth-capable clients only need the MCP URL:
 ```json
 {
   "mcpServers": {
-    "reactive-resume": {
+    "resume-builder": {
       "url": "https://resumebuilder.com/mcp"
     }
   }
@@ -61,7 +61,7 @@ If OAuth is not supported in your client, send `x-api-key`:
 ```json
 {
   "mcpServers": {
-    "reactive-resume": {
+    "resume-builder": {
       "url": "https://resumebuilder.com/mcp",
       "headers": {
         "x-api-key": "your-api-key"
@@ -80,7 +80,7 @@ If your client only supports `command` / `args` (for example, local-only Claude 
 ```json
 {
   "mcpServers": {
-    "reactive-resume": {
+    "resume-builder": {
       "command": "npx",
       "args": ["mcp-remote", "https://resumebuilder.com/mcp", "--header", "x-api-key:your-api-key"]
     }
@@ -132,7 +132,7 @@ Reactive Resume is configured as an OAuth authorization server for MCP clients:
 ```json
 {
   "mcpServers": {
-    "reactive-resume": {
+    "resume-builder": {
       "url": "https://resumebuilder.com/mcp"
     }
   }
@@ -144,7 +144,7 @@ Reactive Resume is configured as an OAuth authorization server for MCP clients:
 ```json
 {
   "mcpServers": {
-    "reactive-resume": {
+    "resume-builder": {
       "url": "https://resumebuilder.com/mcp",
       "headers": {
         "x-api-key": "your-api-key"
@@ -159,19 +159,19 @@ Reactive Resume is configured as an OAuth authorization server for MCP clients:
 Add server:
 
 ```bash
-codex mcp add reactive-resume --url https://resumebuilder.com/mcp
+codex mcp add resume-builder --url https://resumebuilder.com/mcp
 ```
 
 Then log in with OAuth:
 
 ```bash
-codex mcp login reactive-resume
+codex mcp login resume-builder
 ```
 
 API key fallback (`config.toml`):
 
 ```toml
-[mcp_servers."reactive-resume"]
+[mcp_servers."resume-builder"]
 url = "https://resumebuilder.com/mcp"
 http_headers = { "x-api-key" = "your-api-key" }
 ```

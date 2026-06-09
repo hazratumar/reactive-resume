@@ -3,8 +3,8 @@ import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { GithubLogoIcon, HeartIcon, RocketIcon, SparkleIcon, UsersIcon, WrenchIcon } from "@phosphor-icons/react";
 import { m } from "motion/react";
-import { Button } from "@reactive-resume/ui/components/button";
-import { cn } from "@reactive-resume/utils/style";
+import { Button } from "@resume-builder/ui/components/button";
+import { cn } from "@resume-builder/utils/style";
 
 type FloatingIconProps = {
 	icon: React.ElementType;
@@ -202,7 +202,7 @@ export const DonationBanner = () => (
 					nativeButton={false}
 					className="h-11 gap-2 px-6"
 					render={
-						<a href="https://opencollective.com/reactive-resume/donate" target="_blank" rel="noopener noreferrer">
+						<a href="https://opencollective.com/resume-builder/donate" target="_blank" rel="noopener noreferrer">
 							<HeartIcon aria-hidden="true" weight="fill" className="text-rose-400 dark:text-rose-600" />
 							Open Collective
 							<span className="sr-only"> ({t`opens in new tab`})</span>

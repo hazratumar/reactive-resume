@@ -1,9 +1,9 @@
 import type { RightSidebarSection } from "@/libs/resume/section";
 import { Fragment, useCallback, useRef } from "react";
 import { match } from "ts-pattern";
-import { Button } from "@reactive-resume/ui/components/button";
-import { ScrollArea } from "@reactive-resume/ui/components/scroll-area";
-import { Separator } from "@reactive-resume/ui/components/separator";
+import { Button } from "@resume-builder/ui/components/button";
+import { ScrollArea } from "@resume-builder/ui/components/scroll-area";
+import { Separator } from "@resume-builder/ui/components/separator";
 import { Copyright } from "@/components/ui/copyright";
 import { getSectionIcon, getSectionTitle, rightSidebarSections } from "@/libs/resume/section";
 import { BuilderSidebarEdge } from "../../-components/edge";

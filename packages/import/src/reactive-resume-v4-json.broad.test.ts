@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ReactiveResumeV4JSONImporter } from "./reactive-resume-v4-json";
+import { ReactiveResumeV4JSONImporter } from "./resume-builder-v4-json";
 
 const baseV4 = () => ({
 	basics: {

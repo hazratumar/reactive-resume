@@ -1,7 +1,7 @@
 import { oauthProviderAuthServerMetadata, oauthProviderOpenIdConfigMetadata } from "@better-auth/oauth-provider";
-import { auth } from "@reactive-resume/auth/config";
-import { env } from "@reactive-resume/env/server";
-import { buildMcpServerCard } from "@reactive-resume/mcp/server-card";
+import { auth } from "@resume-builder/auth/config";
+import { env } from "@resume-builder/env/server";
+import { buildMcpServerCard } from "@resume-builder/mcp/server-card";
 import { appVersion } from "../app-version";
 
 const oauthAuthorizationServerHandler = oauthProviderAuthServerMetadata(auth);

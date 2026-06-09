@@ -1,7 +1,7 @@
-import type { ResumeData, Typography } from "@reactive-resume/schema/resume/data";
+import type { ResumeData, Typography } from "@resume-builder/schema/resume/data";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { getWebFontSource } from "@reactive-resume/fonts";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
+import { getWebFontSource } from "@resume-builder/fonts";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
 import { Font } from "../renderer";
 
 const typography = {

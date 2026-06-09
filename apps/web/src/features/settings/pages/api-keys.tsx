@@ -4,8 +4,8 @@ import { BookOpenIcon, KeyIcon, LinkSimpleIcon, PlusIcon, TrashSimpleIcon } from
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { AnimatePresence, m } from "motion/react";
 import { toast } from "sonner";
-import { Button } from "@reactive-resume/ui/components/button";
-import { Separator } from "@reactive-resume/ui/components/separator";
+import { Button } from "@resume-builder/ui/components/button";
+import { Separator } from "@resume-builder/ui/components/separator";
 import { useDialogStore } from "@/dialogs/store";
 import { useConfirm } from "@/hooks/use-confirm";
 import { authClient } from "@/libs/auth/client";

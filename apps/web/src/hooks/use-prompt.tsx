@@ -9,9 +9,9 @@ import {
 	AlertDialogFooter,
 	AlertDialogHeader,
 	AlertDialogTitle,
-} from "@reactive-resume/ui/components/alert-dialog";
-import { Input } from "@reactive-resume/ui/components/input";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/alert-dialog";
+import { Input } from "@resume-builder/ui/components/input";
+import { cn } from "@resume-builder/utils/style";
 
 type PromptOptions = {
 	description?: string;

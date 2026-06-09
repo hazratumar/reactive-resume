@@ -4,7 +4,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, beforeAll, describe, expect, it, vi } from "vitest";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
 
 const downloadWithAnchor = vi.hoisted(() => vi.fn());
 const buildDocx = vi.hoisted(() => vi.fn().mockResolvedValue(new Blob(["x"], { type: "application/x-docx" })));
@@ -17,11 +17,11 @@ type SectionBaseProps = {
 vi.mock("../shared/section-base", () => ({
 	SectionBase: ({ children }: SectionBaseProps) => <div>{children}</div>,
 }));
-vi.mock("@reactive-resume/utils/file", () => ({
+vi.mock("@resume-builder/utils/file", () => ({
 	downloadWithAnchor,
 	generateFilename: (name: string, ext: string) => `${name}.${ext}`,
 }));
-vi.mock("@reactive-resume/docx", () => ({ buildDocx }));
+vi.mock("@resume-builder/docx", () => ({ buildDocx }));
 vi.mock("@/features/resume/export/pdf-document", () => ({ createResumePdfBlob }));
 vi.mock("@/features/resume/builder/draft", () => ({
 	useResume: () => ({ id: "r1", name: "My Resume", data: defaultResumeData }),

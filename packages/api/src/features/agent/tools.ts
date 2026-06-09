@@ -1,9 +1,9 @@
-import type { AIProvider } from "@reactive-resume/ai/types";
+import type { AIProvider } from "@resume-builder/ai/types";
 import type { ToolSet } from "ai";
 import { createOpenAI } from "@ai-sdk/openai";
 import { tool } from "ai";
 import z from "zod";
-import { jsonPatchOperationSchema } from "@reactive-resume/resume/patch";
+import { jsonPatchOperationSchema } from "@resume-builder/resume/patch";
 import { supportsProviderNativeWebSearch } from "../ai/capabilities";
 
 type AgentProviderConfig = {

@@ -14,7 +14,7 @@ import type {
 	SkillItem,
 	SummaryItem,
 	VolunteerItem,
-} from "@reactive-resume/schema/resume/data";
+} from "@resume-builder/schema/resume/data";
 import type { IconName } from "phosphor-icons-react-pdf/dynamic";
 import type { ReactNode } from "react";
 import type { StyleInput, TemplatePlacement } from "./styles";

@@ -1,6 +1,6 @@
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
-import { CommandItem } from "@reactive-resume/ui/components/command";
+import { CommandItem } from "@resume-builder/ui/components/command";
 import { isLocale, loadLocale, localeMap, setLocaleCookie } from "@/libs/locale";
 import { BaseCommandGroup } from "../base";
 

@@ -1,8 +1,8 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { ReactNode } from "react";
 import type { SectionTitleResolver } from "./section-title";
 import { createContext, use, useMemo } from "react";
-import { isRTL } from "@reactive-resume/utils/locale";
+import { isRTL } from "@resume-builder/utils/locale";
 
 type RenderContextValue = ResumeData & {
 	resolveSectionTitle?: SectionTitleResolver | undefined;

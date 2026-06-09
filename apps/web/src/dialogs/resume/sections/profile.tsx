@@ -3,26 +3,26 @@ import type { DialogProps } from "@/dialogs/store";
 import { Trans } from "@lingui/react/macro";
 import { AtIcon, PencilSimpleLineIcon, PlusIcon } from "@phosphor-icons/react";
 import { useStore } from "@tanstack/react-form";
-import { profileItemSchema } from "@reactive-resume/schema/resume/data";
-import { Button } from "@reactive-resume/ui/components/button";
+import { profileItemSchema } from "@resume-builder/schema/resume/data";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DialogContent,
 	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@reactive-resume/ui/components/dialog";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
-import { Input } from "@reactive-resume/ui/components/input";
+} from "@resume-builder/ui/components/dialog";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
+import { Input } from "@resume-builder/ui/components/input";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupInput,
 	InputGroupText,
-} from "@reactive-resume/ui/components/input-group";
-import { PopoverTrigger } from "@reactive-resume/ui/components/popover";
-import { Switch } from "@reactive-resume/ui/components/switch";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/input-group";
+import { PopoverTrigger } from "@resume-builder/ui/components/popover";
+import { Switch } from "@resume-builder/ui/components/switch";
+import { cn } from "@resume-builder/utils/style";
 import { ColorPicker } from "@/components/input/color-picker";
 import { IconPicker } from "@/components/input/icon-picker";
 import { URLInput } from "@/components/input/url-input";

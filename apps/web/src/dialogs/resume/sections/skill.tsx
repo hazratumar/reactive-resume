@@ -4,20 +4,20 @@ import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
 import { PencilSimpleLineIcon, PlusIcon } from "@phosphor-icons/react";
 import { useStore } from "@tanstack/react-form";
-import { skillItemSchema } from "@reactive-resume/schema/resume/data";
-import { Button } from "@reactive-resume/ui/components/button";
+import { skillItemSchema } from "@resume-builder/schema/resume/data";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DialogContent,
 	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@reactive-resume/ui/components/dialog";
-import { FormControl, FormDescription, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
-import { Input } from "@reactive-resume/ui/components/input";
-import { PopoverTrigger } from "@reactive-resume/ui/components/popover";
-import { Slider } from "@reactive-resume/ui/components/slider";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/dialog";
+import { FormControl, FormDescription, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
+import { Input } from "@resume-builder/ui/components/input";
+import { PopoverTrigger } from "@resume-builder/ui/components/popover";
+import { Slider } from "@resume-builder/ui/components/slider";
+import { cn } from "@resume-builder/utils/style";
 import { ChipInput } from "@/components/input/chip-input";
 import { ColorPicker } from "@/components/input/color-picker";
 import { IconPicker } from "@/components/input/icon-picker";

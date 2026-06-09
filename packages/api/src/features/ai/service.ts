@@ -1,6 +1,6 @@
-import type { AIProvider } from "@reactive-resume/ai/types";
-import type { ResumeAnalysis } from "@reactive-resume/schema/resume/analysis";
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { AIProvider } from "@resume-builder/ai/types";
+import type { ResumeAnalysis } from "@resume-builder/schema/resume/analysis";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { ModelMessage, UIMessage } from "ai";
 import { createAnthropic } from "@ai-sdk/anthropic";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
@@ -18,17 +18,17 @@ import {
 	docxParserUserPrompt,
 	pdfParserSystemPrompt,
 	pdfParserUserPrompt,
-} from "@reactive-resume/ai/prompts";
-import { buildAiExtractionTemplate } from "@reactive-resume/ai/resume/extraction-template";
-import { sanitizeAndParseResumeJson } from "@reactive-resume/ai/resume/sanitize";
+} from "@resume-builder/ai/prompts";
+import { buildAiExtractionTemplate } from "@resume-builder/ai/resume/extraction-template";
+import { sanitizeAndParseResumeJson } from "@resume-builder/ai/resume/sanitize";
 import {
 	normalizeResumePatchProposals,
 	resumePatchProposalToolInputSchema,
 	resumePatchProposalToolOutputSchema,
-} from "@reactive-resume/ai/tools/patch-proposal";
-import { aiProviderSchema } from "@reactive-resume/ai/types";
-import { applyResumePatches } from "@reactive-resume/resume/patch";
-import { resumeAnalysisOutputSchema, resumeAnalysisSchema } from "@reactive-resume/schema/resume/analysis";
+} from "@resume-builder/ai/tools/patch-proposal";
+import { aiProviderSchema } from "@resume-builder/ai/types";
+import { applyResumePatches } from "@resume-builder/resume/patch";
+import { resumeAnalysisOutputSchema, resumeAnalysisSchema } from "@resume-builder/schema/resume/analysis";
 import { supportsProviderNativeWebSearch } from "./capabilities";
 import { resolveAiBaseUrl } from "./url-policy";
 

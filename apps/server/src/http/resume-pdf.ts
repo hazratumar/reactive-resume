@@ -1,4 +1,4 @@
-import { createResumePdfDownload, verifyResumePdfDownloadToken } from "@reactive-resume/api/features/resume/export";
+import { createResumePdfDownload, verifyResumePdfDownloadToken } from "@resume-builder/api/features/resume/export";
 
 function unauthorizedResponse() {
 	return new Response("Unauthorized", {

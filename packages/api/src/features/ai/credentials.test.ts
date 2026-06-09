@@ -5,7 +5,7 @@ const envMock = vi.hoisted(() => ({
 	REDIS_URL: "redis://localhost:6379",
 }));
 
-vi.mock("@reactive-resume/env/server", () => ({ env: envMock }));
+vi.mock("@resume-builder/env/server", () => ({ env: envMock }));
 
 const {
 	assertAgentEnvironment,

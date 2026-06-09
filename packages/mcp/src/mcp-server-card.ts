@@ -1,6 +1,6 @@
 import { toJsonSchemaCompat } from "@modelcontextprotocol/sdk/server/zod-json-schema-compat.js";
 import z from "zod";
-import { resumePatchOperationsSchema } from "@reactive-resume/ai/tools/resume-tool-contracts";
+import { resumePatchOperationsSchema } from "@resume-builder/ai/tools/resume-tool-contracts";
 import { MCP_TOOL_NAME as T } from "./mcp-tool-names";
 import { TOOL_ANNOTATIONS } from "./tool-annotations";
 
@@ -330,7 +330,7 @@ export function buildMcpServerCard(appVersion: string) {
 			},
 		},
 		serverInfo: {
-			name: "reactive-resume",
+			name: "resume-builder",
 			version: appVersion,
 			title: "Reactive Resume",
 			websiteUrl: "https://resumebuilder.com",

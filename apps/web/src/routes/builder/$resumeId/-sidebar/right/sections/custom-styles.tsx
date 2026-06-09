@@ -4,18 +4,18 @@ import type {
 	StyleRule,
 	StyleRuleTarget,
 	StyleSlot,
-} from "@reactive-resume/schema/resume/data";
+} from "@resume-builder/schema/resume/data";
 import type { ReactNode } from "react";
 import type { ComboboxOption } from "@/components/ui/combobox";
 import { Trans } from "@lingui/react/macro";
 import { EyeIcon, EyeSlashIcon, PencilSimpleIcon, TrashSimpleIcon } from "@phosphor-icons/react";
 import { useMemo, useState } from "react";
-import { sectionTypeSchema } from "@reactive-resume/schema/resume/data";
-import { Button } from "@reactive-resume/ui/components/button";
-import { Input } from "@reactive-resume/ui/components/input";
-import { Label } from "@reactive-resume/ui/components/label";
-import { Separator } from "@reactive-resume/ui/components/separator";
-import { cn } from "@reactive-resume/utils/style";
+import { sectionTypeSchema } from "@resume-builder/schema/resume/data";
+import { Button } from "@resume-builder/ui/components/button";
+import { Input } from "@resume-builder/ui/components/input";
+import { Label } from "@resume-builder/ui/components/label";
+import { Separator } from "@resume-builder/ui/components/separator";
+import { cn } from "@resume-builder/utils/style";
 import { ColorPicker } from "@/components/input/color-picker";
 import { Combobox } from "@/components/ui/combobox";
 import { useCurrentResume, useUpdateResumeData } from "@/features/resume/builder/draft";

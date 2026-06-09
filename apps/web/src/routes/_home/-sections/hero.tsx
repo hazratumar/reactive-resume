@@ -3,8 +3,8 @@ import { Trans } from "@lingui/react/macro";
 import { ArrowRightIcon, BookIcon, SparkleIcon } from "@phosphor-icons/react";
 import { Link } from "@tanstack/react-router";
 import { m } from "motion/react";
-import { Badge } from "@reactive-resume/ui/components/badge";
-import { Button } from "@reactive-resume/ui/components/button";
+import { Badge } from "@resume-builder/ui/components/badge";
+import { Button } from "@resume-builder/ui/components/button";
 import { CometCard } from "@/components/animation/comet-card";
 import { Spotlight } from "@/components/animation/spotlight";
 

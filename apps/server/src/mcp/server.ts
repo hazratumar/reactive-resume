@@ -2,8 +2,8 @@ import type { RouterClient } from "@orpc/server";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { onError } from "@orpc/client";
 import { createRouterClient } from "@orpc/server";
-import router from "@reactive-resume/api/routers";
-import { MCP_TOOL_NAME, registerPrompts, registerResources, registerTools } from "@reactive-resume/mcp";
+import router from "@resume-builder/api/routers";
+import { MCP_TOOL_NAME, registerPrompts, registerResources, registerTools } from "@resume-builder/mcp";
 import { appVersion } from "../app-version";
 import { getRequestLocale } from "../rpc/locale";
 
@@ -25,7 +25,7 @@ function createRequestClient(request: Request): RouterClient<typeof router> {
 export async function createMcpServer(request: Request) {
 	const server = new McpServer(
 		{
-			name: "reactive-resume",
+			name: "resume-builder",
 			version: appVersion,
 			title: "Resume Builder",
 			websiteUrl: "https://resumebuilder.com",

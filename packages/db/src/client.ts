@@ -1,7 +1,7 @@
 import type { NodePgDatabase } from "drizzle-orm/node-postgres";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
-import { env } from "@reactive-resume/env/server";
+import { env } from "@resume-builder/env/server";
 import { relations } from "./relations";
 
 declare global {

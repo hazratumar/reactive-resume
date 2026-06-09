@@ -1,4 +1,4 @@
-import { CommandGroup } from "@reactive-resume/ui/components/command";
+import { CommandGroup } from "@resume-builder/ui/components/command";
 import { useCommandPaletteStore } from "../store";
 
 type Props = {

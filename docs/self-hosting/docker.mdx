@@ -23,8 +23,8 @@ Reactive Resume can be self-hosted using Docker in a matter of minutes, and this
 
 You can pull the latest app image from:
 
-- Docker Hub: `amruthpillai/reactive-resume:latest`
-- GitHub Container Registry: `ghcr.io/amruthpillai/reactive-resume:latest`
+- Docker Hub: `amruthpillai/resume-builder:latest`
+- GitHub Container Registry: `ghcr.io/amruthpillai/resume-builder:latest`
 
 ## Minimum requirements
 
@@ -36,7 +36,7 @@ You can pull the latest app image from:
 
 ## Quickstart using Docker Compose
 
-Create a new folder (for example `reactive-resume/`) with:
+Create a new folder (for example `resume-builder/`) with:
 
 - `compose.yml`
 - `.env`
@@ -166,9 +166,9 @@ services:
       timeout: 5s
       retries: 10
 
-  reactive-resume:
-    image: amruthpillai/reactive-resume:latest
-    # image: ghcr.io/amruthpillai/reactive-resume:latest
+  resume-builder:
+    image: amruthpillai/resume-builder:latest
+    # image: ghcr.io/amruthpillai/resume-builder:latest
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -193,7 +193,7 @@ volumes:
     </CodeGroup>
 
     <Tip>
-      Prefer pulling from Docker Hub? Keep <code>amruthpillai/reactive-resume:latest</code>. Prefer GHCR? Swap it to <code>ghcr.io/amruthpillai/reactive-resume:latest</code>.
+      Prefer pulling from Docker Hub? Keep <code>amruthpillai/resume-builder:latest</code>. Prefer GHCR? Swap it to <code>ghcr.io/amruthpillai/resume-builder:latest</code>.
     </Tip>
 
     <Note>
@@ -216,7 +216,7 @@ docker compose ps
 ```
 
 ```bash
-docker compose logs -f reactive-resume
+docker compose logs -f resume-builder
 ```
 
     </CodeGroup>
@@ -382,7 +382,7 @@ To update your Reactive Resume installation to the latest available version, fol
 4. **Check migration/startup logs** after deploy.
 
    ```bash
-   docker compose logs -f reactive-resume
+   docker compose logs -f resume-builder
    ```
 
 5. **(Optional) Remove old, unused Docker images** to free up disk space.
@@ -460,7 +460,7 @@ A healthy response returns HTTP 200. Any other response (or a connection failure
     - **What to do**:
       Check logs for migration errors and database connectivity details:
       ```bash
-      docker compose logs -f reactive-resume
+      docker compose logs -f resume-builder
       ```
   </Accordion>
 

@@ -4,10 +4,10 @@ import { OpenAPIHandler } from "@orpc/openapi/fetch";
 import { onError } from "@orpc/server";
 import { BatchHandlerPlugin, RequestHeadersPlugin, StrictGetMethodPlugin } from "@orpc/server/plugins";
 import { ZodToJsonSchemaConverter } from "@orpc/zod/zod4";
-import { downloadResumePdfProcedure } from "@reactive-resume/api/features/resume/export";
-import router from "@reactive-resume/api/routers";
-import { env } from "@reactive-resume/env/server";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+import { downloadResumePdfProcedure } from "@resume-builder/api/features/resume/export";
+import router from "@resume-builder/api/routers";
+import { env } from "@resume-builder/env/server";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
 import { appVersion } from "../app-version";
 import { mergeResponseHeaders } from "../http/headers";
 import { getRequestLocale } from "../rpc/locale";
@@ -47,8 +47,8 @@ export async function handleOpenApi(request: Request) {
 				title: "Reactive Resume",
 				version: appVersion,
 				description: "Reactive Resume API",
-				license: { name: "MIT", url: "https://github.com/amruthpillai/reactive-resume/blob/main/LICENSE" },
-				contact: { name: "CodeByUmar", email: "hello@amruthpillai.com", url: "https://amruthpillai.com" },
+				license: { name: "MIT", url: "https://github.com/amruthpillai/resume-builder/blob/main/LICENSE" },
+				contact: { name: "CodeByUmar", email: "codesbyumar@gmail.com", url: "https://amruthpillai.com" },
 			},
 			servers: [{ url: `${env.APP_URL}/api/openapi` }],
 			externalDocs: { url: "https://docs.resumebuilder.com", description: "Reactive Resume Documentation" },

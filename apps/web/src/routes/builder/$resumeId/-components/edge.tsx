@@ -1,4 +1,4 @@
-import { cn } from "@reactive-resume/utils/style";
+import { cn } from "@resume-builder/utils/style";
 
 type Props = {
 	side: "left" | "right";

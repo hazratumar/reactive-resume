@@ -2,13 +2,13 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const readMock = vi.fn();
 
-vi.mock("@reactive-resume/api/features/storage", () => ({
+vi.mock("@resume-builder/api/features/storage", () => ({
 	getStorageService: () => ({
 		read: readMock,
 	}),
 }));
 
-vi.mock("@reactive-resume/env/server", () => ({
+vi.mock("@resume-builder/env/server", () => ({
 	env: {
 		APP_URL: "https://example.com",
 	},

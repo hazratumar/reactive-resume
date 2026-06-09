@@ -1,4 +1,4 @@
-import { env } from "@reactive-resume/env/server";
+import { env } from "@resume-builder/env/server";
 
 const DOCS_URL = "https://docs.resumebuilder.com";
 

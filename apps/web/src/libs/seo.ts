@@ -1,6 +1,6 @@
 const productionRootUrl = "https://resumebuilder.com/";
 const appName = "Resume Builder";
-const repositoryUrl = "https://github.com/amruthpillai/reactive-resume";
+const repositoryUrl = "https://github.com/amruthpillai/resume-builder";
 
 type JsonLd = Record<string, unknown>;
 
@@ -83,7 +83,7 @@ export const getRootStructuredData = (canonicalUrl: string): JsonLd[] => [
 ];
 
 export const createRootStructuredDataScript = (canonicalUrl: string) =>
-	createStructuredDataScript("reactive-resume-structured-data", {
+	createStructuredDataScript("resume-builder-structured-data", {
 		"@context": "https://schema.org",
 		"@graph": getRootStructuredData(canonicalUrl),
 	});

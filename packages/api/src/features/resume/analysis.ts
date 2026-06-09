@@ -1,5 +1,5 @@
 import z from "zod";
-import { storedResumeAnalysisSchema } from "@reactive-resume/schema/resume/analysis";
+import { storedResumeAnalysisSchema } from "@resume-builder/schema/resume/analysis";
 import { protectedProcedure } from "../../context";
 import { resumeService } from "./service";
 

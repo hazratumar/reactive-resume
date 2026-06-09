@@ -1,13 +1,13 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import { flattenError, ZodError, z } from "zod";
-import { getNetworkIcon } from "@reactive-resume/resume/icons";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
-import { formatPeriod, formatSingleDate } from "@reactive-resume/utils/date";
-import { arrayToHtmlList, toHtmlDescription } from "@reactive-resume/utils/html";
-import { parseLevel } from "@reactive-resume/utils/level";
-import { generateId } from "@reactive-resume/utils/string";
-import { createUrl } from "@reactive-resume/utils/url";
+import { getNetworkIcon } from "@resume-builder/resume/icons";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
+import { formatPeriod, formatSingleDate } from "@resume-builder/utils/date";
+import { arrayToHtmlList, toHtmlDescription } from "@resume-builder/utils/html";
+import { parseLevel } from "@resume-builder/utils/level";
+import { generateId } from "@resume-builder/utils/string";
+import { createUrl } from "@resume-builder/utils/url";
 
 const createItemWebsite = (url?: string, label?: string) => ({
 	...createUrl(url, label),

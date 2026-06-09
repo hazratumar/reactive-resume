@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
-import { ReactiveResumeJSONImporter } from "./reactive-resume-json";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
+import { ReactiveResumeJSONImporter } from "./resume-builder-json";
 
 const importer = new ReactiveResumeJSONImporter();
 

@@ -4,8 +4,8 @@ import { Trans } from "@lingui/react/macro";
 import { GithubLogoIcon, LinkedinLogoIcon, XLogoIcon } from "@phosphor-icons/react";
 import { m } from "motion/react";
 import { useState } from "react";
-import { BrandIcon } from "@reactive-resume/ui/components/brand-icon";
-import { Button } from "@reactive-resume/ui/components/button";
+import { BrandIcon } from "@resume-builder/ui/components/brand-icon";
+import { Button } from "@resume-builder/ui/components/button";
 import { Copyright } from "@/components/ui/copyright";
 
 type FooterLinkItem = {
@@ -26,20 +26,20 @@ type SocialLink = {
 
 const getResourceLinks = (): FooterLinkItem[] => [
 	{ url: "https://docs.resumebuilder.com", label: t`Documentation` },
-	{ url: "https://opencollective.com/reactive-resume/donate", label: t`Sponsorships` },
-	{ url: "https://github.com/amruthpillai/reactive-resume", label: t`Source Code` },
+	{ url: "https://opencollective.com/resume-builder/donate", label: t`Sponsorships` },
+	{ url: "https://github.com/amruthpillai/resume-builder", label: t`Source Code` },
 	{ url: "https://docs.resumebuilder.com/changelog", label: t`Changelog` },
 ];
 
 const getCommunityLinks = (): FooterLinkItem[] => [
-	{ url: "https://github.com/amruthpillai/reactive-resume/issues", label: t`Report an issue` },
-	{ url: "https://crowdin.com/project/reactive-resume", label: t`Translations` },
+	{ url: "https://github.com/amruthpillai/resume-builder/issues", label: t`Report an issue` },
+	{ url: "https://crowdin.com/project/resume-builder", label: t`Translations` },
 	{ url: "https://reddit.com/r/reactiveresume", label: t`Subreddit` },
 	{ url: "https://discord.gg/aSyA5ZSxpb", label: t`Discord` },
 ];
 
 const socialLinks: SocialLink[] = [
-	{ url: "https://github.com/amruthpillai/reactive-resume", label: t`GitHub`, icon: GithubLogoIcon },
+	{ url: "https://github.com/amruthpillai/resume-builder", label: t`GitHub`, icon: GithubLogoIcon },
 	{ url: "https://linkedin.com/in/amruthpillai", label: t`LinkedIn`, icon: LinkedinLogoIcon },
 	{ url: "https://x.com/KingOKings", label: t`X (Twitter)`, icon: XLogoIcon },
 ];

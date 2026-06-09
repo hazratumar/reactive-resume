@@ -1,8 +1,8 @@
-import type { StoredResumeAnalysis } from "@reactive-resume/schema/resume/analysis";
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { StoredResumeAnalysis } from "@resume-builder/schema/resume/analysis";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import * as pg from "drizzle-orm/pg-core";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
-import { generateId } from "@reactive-resume/utils/string";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
+import { generateId } from "@resume-builder/utils/string";
 import { user } from "./auth";
 
 export const resume = pg.pgTable(

@@ -3,7 +3,7 @@ import { QuotesIcon } from "@phosphor-icons/react";
 import { m } from "motion/react";
 import { useMemo } from "react";
 
-const email = "hello@amruthpillai.com";
+const email = "codesbyumar@gmail.com";
 
 const testimonials: string[] = [
 	"Great site. Love the interactive interface. You can tell it's designed by someone who wants to use it.",

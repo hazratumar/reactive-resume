@@ -2,7 +2,7 @@ import type { CSSProperties } from "react";
 import type { PreviewPageSize, ResolvedResumePreviewProps } from "./preview.shared";
 import { AnimatePresence, m } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { cn } from "@reactive-resume/utils/style";
+import { cn } from "@resume-builder/utils/style";
 import { createResumePdfBlob } from "@/features/resume/export/pdf-document";
 import { useResumeData } from "../builder/draft";
 import { PdfCanvasDocument, PdfCanvasPage } from "./pdf-canvas";

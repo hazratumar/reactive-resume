@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ReactiveResumeV4JSONImporter } from "./reactive-resume-v4-json";
+import { ReactiveResumeV4JSONImporter } from "./resume-builder-v4-json";
 
 // Minimal v4 resume JSON to use as base in all tests.
 // V4 layout is Array<Array<string[]>>: [ [mainColumn, sidebarColumn] ]

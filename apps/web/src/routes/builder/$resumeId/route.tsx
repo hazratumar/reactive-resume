@@ -6,7 +6,7 @@ import { createFileRoute, Outlet, redirect } from "@tanstack/react-router";
 import Cookies from "js-cookie";
 import { useEffect, useRef } from "react";
 import { usePanelRef } from "react-resizable-panels";
-import { ResizableGroup, ResizablePanel, ResizableSeparator } from "@reactive-resume/ui/components/resizable";
+import { ResizableGroup, ResizablePanel, ResizableSeparator } from "@resume-builder/ui/components/resizable";
 import {
 	useBuilderResumeUpdateSubscription,
 	useInitializeResumeStore,

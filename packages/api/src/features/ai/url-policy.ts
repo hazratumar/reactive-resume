@@ -1,7 +1,7 @@
-import type { AIProvider } from "@reactive-resume/ai/types";
-import { AI_PROVIDER_DEFAULT_BASE_URLS } from "@reactive-resume/ai/types";
-import { env } from "@reactive-resume/env/server";
-import { isPrivateOrLoopbackHost, parseUrl } from "@reactive-resume/utils/url-security.node";
+import type { AIProvider } from "@resume-builder/ai/types";
+import { AI_PROVIDER_DEFAULT_BASE_URLS } from "@resume-builder/ai/types";
+import { env } from "@resume-builder/env/server";
+import { isPrivateOrLoopbackHost, parseUrl } from "@resume-builder/utils/url-security.node";
 
 type ResolveAiBaseUrlInput = {
 	provider: AIProvider;

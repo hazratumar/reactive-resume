@@ -1,7 +1,7 @@
 import { t } from "@lingui/core/macro";
 import { GithubLogoIcon, StarIcon } from "@phosphor-icons/react";
 import { useQuery } from "@tanstack/react-query";
-import { Button } from "@reactive-resume/ui/components/button";
+import { Button } from "@resume-builder/ui/components/button";
 import { orpc } from "@/libs/orpc/client";
 import { CountUp } from "../animation/count-up";
 
@@ -20,7 +20,7 @@ export function GithubStarsButton() {
 			render={
 				<a
 					target="_blank"
-					href="https://github.com/amruthpillai/reactive-resume"
+					href="https://github.com/amruthpillai/resume-builder"
 					aria-label={ariaLabel}
 					rel="noopener noreferrer"
 				>

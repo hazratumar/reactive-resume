@@ -1,5 +1,5 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { env } from "@reactive-resume/env/server";
+import { env } from "@resume-builder/env/server";
 
 export const MAX_PDF_DOWNLOAD_URL_TTL_SECONDS = 10 * 60;
 

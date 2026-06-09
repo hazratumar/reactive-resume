@@ -1,4 +1,4 @@
-import { auth, verifyOAuthToken } from "@reactive-resume/auth/config";
+import { auth, verifyOAuthToken } from "@resume-builder/auth/config";
 
 export class AuthError extends Error {
 	constructor() {

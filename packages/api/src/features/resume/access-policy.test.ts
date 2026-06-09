@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
 import { assertCanView, isOwner, redactResumeForViewer, shouldCountForStatistics } from "./access-policy";
 
 describe("isOwner", () => {

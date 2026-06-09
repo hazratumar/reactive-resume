@@ -1,8 +1,8 @@
 import { createSelectSchema } from "drizzle-zod";
 import z from "zod";
-import * as schema from "@reactive-resume/db/schema";
-import { jsonPatchOperationSchema } from "@reactive-resume/resume/patch";
-import { resumeDataSchema } from "@reactive-resume/schema/resume/data";
+import * as schema from "@resume-builder/db/schema";
+import { jsonPatchOperationSchema } from "@resume-builder/resume/patch";
+import { resumeDataSchema } from "@resume-builder/schema/resume/data";
 
 const resumeSchema = createSelectSchema(schema.resume, {
 	id: z.string().describe("The ID of the resume."),

@@ -1,8 +1,8 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
-import type { Template } from "@reactive-resume/schema/templates";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
+import type { Template } from "@resume-builder/schema/templates";
 import { useMemo } from "react";
-import { createResumePdfBlob as createPdfBlob } from "@reactive-resume/pdf/browser";
-import { ResumeDocument } from "@reactive-resume/pdf/document";
+import { createResumePdfBlob as createPdfBlob } from "@resume-builder/pdf/browser";
+import { ResumeDocument } from "@resume-builder/pdf/document";
 import { createSectionTitleResolverForLocale, useSectionTitleResolver } from "@/libs/resume/section-title-locale";
 
 export const useLocalizedResumeDocument = (data?: ResumeData, template?: Template) => {

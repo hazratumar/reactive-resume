@@ -1,4 +1,4 @@
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
 
 function makeEmptyItem(shape: Record<string, unknown>): Record<string, unknown> {
 	const item: Record<string, unknown> = {};

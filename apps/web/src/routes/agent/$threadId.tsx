@@ -34,22 +34,22 @@ import { m } from "motion/react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { toast } from "sonner";
-import { Badge } from "@reactive-resume/ui/components/badge";
-import { Button } from "@reactive-resume/ui/components/button";
+import { Badge } from "@resume-builder/ui/components/badge";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@reactive-resume/ui/components/dropdown-menu";
-import { ResizableGroup, ResizablePanel, ResizableSeparator } from "@reactive-resume/ui/components/resizable";
-import { ScrollArea } from "@reactive-resume/ui/components/scroll-area";
-import { Tabs, TabsList, TabsTrigger } from "@reactive-resume/ui/components/tabs";
-import { Textarea } from "@reactive-resume/ui/components/textarea";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@reactive-resume/ui/components/tooltip";
-import { downloadWithAnchor, generateFilename } from "@reactive-resume/utils/file";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/dropdown-menu";
+import { ResizableGroup, ResizablePanel, ResizableSeparator } from "@resume-builder/ui/components/resizable";
+import { ScrollArea } from "@resume-builder/ui/components/scroll-area";
+import { Tabs, TabsList, TabsTrigger } from "@resume-builder/ui/components/tabs";
+import { Textarea } from "@resume-builder/ui/components/textarea";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@resume-builder/ui/components/tooltip";
+import { downloadWithAnchor, generateFilename } from "@resume-builder/utils/file";
+import { cn } from "@resume-builder/utils/style";
 import { createResumePdfBlob } from "@/features/resume/export/pdf-document";
 import { ResumePreview } from "@/features/resume/preview/preview";
 import { useConfirm } from "@/hooks/use-confirm";
@@ -1053,7 +1053,7 @@ function AgentChatComposer({
 	);
 }
 
-const AGENT_PREVIEW_ZOOM_STORAGE_KEY = "reactive-resume:agent-preview-zoom:v3";
+const AGENT_PREVIEW_ZOOM_STORAGE_KEY = "resume-builder:agent-preview-zoom:v3";
 const AGENT_PREVIEW_ZOOM_MIGRATION_KEY = `${AGENT_PREVIEW_ZOOM_STORAGE_KEY}:initialized`;
 const MIN_PREVIEW_ZOOM = 0.4;
 const MAX_PREVIEW_ZOOM = 1.5;

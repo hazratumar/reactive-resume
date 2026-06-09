@@ -4,9 +4,9 @@ import type {
 	ResumeData,
 	SectionItem,
 	SectionType,
-} from "@reactive-resume/schema/resume/data";
+} from "@resume-builder/schema/resume/data";
 import type { WritableDraft } from "immer";
-import { generateId } from "@reactive-resume/utils/string";
+import { generateId } from "@resume-builder/utils/string";
 import { getSectionTitle as getDefaultSectionTitle } from "./section";
 
 // ============================================================================

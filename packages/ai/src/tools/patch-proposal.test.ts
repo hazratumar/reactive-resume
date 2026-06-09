@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { sampleResumeData } from "@reactive-resume/schema/resume/sample";
+import { sampleResumeData } from "@resume-builder/schema/resume/sample";
 import {
 	buildResumePatchProposalPreview,
 	normalizeResumePatchProposals,

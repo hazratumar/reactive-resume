@@ -1,5 +1,5 @@
-import { sampleResumeData } from "@reactive-resume/schema/resume/sample";
-import { generateRandomName, slugify } from "@reactive-resume/utils/string";
+import { sampleResumeData } from "@resume-builder/schema/resume/sample";
+import { generateRandomName, slugify } from "@resume-builder/utils/string";
 import { protectedProcedure } from "../../context";
 import { resumeDto } from "../../dto/resume";
 import { resumeMutationRateLimit } from "../../middleware/rate-limit";

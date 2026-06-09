@@ -1,4 +1,4 @@
-import type { ResumeData } from "@reactive-resume/schema/resume/data";
+import type { ResumeData } from "@resume-builder/schema/resume/data";
 import type { DialogProps } from "../store";
 import { t } from "@lingui/core/macro";
 import { Trans } from "@lingui/react/macro";
@@ -9,22 +9,22 @@ import { useNavigate } from "@tanstack/react-router";
 import { useRef, useState } from "react";
 import { toast } from "sonner";
 import z from "zod";
-import { JSONResumeImporter } from "@reactive-resume/import/json-resume";
-import { ReactiveResumeJSONImporter } from "@reactive-resume/import/reactive-resume-json";
-import { ReactiveResumeV4JSONImporter } from "@reactive-resume/import/reactive-resume-v4-json";
-import { Badge } from "@reactive-resume/ui/components/badge";
-import { Button } from "@reactive-resume/ui/components/button";
+import { JSONResumeImporter } from "@resume-builder/import/json-resume";
+import { ReactiveResumeJSONImporter } from "@resume-builder/import/resume-builder-json";
+import { ReactiveResumeV4JSONImporter } from "@resume-builder/import/resume-builder-v4-json";
+import { Badge } from "@resume-builder/ui/components/badge";
+import { Button } from "@resume-builder/ui/components/button";
 import {
 	DialogContent,
 	DialogDescription,
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@reactive-resume/ui/components/dialog";
-import { FormControl, FormItem, FormLabel, FormMessage } from "@reactive-resume/ui/components/form";
-import { Input } from "@reactive-resume/ui/components/input";
-import { Spinner } from "@reactive-resume/ui/components/spinner";
-import { cn } from "@reactive-resume/utils/style";
+} from "@resume-builder/ui/components/dialog";
+import { FormControl, FormItem, FormLabel, FormMessage } from "@resume-builder/ui/components/form";
+import { Input } from "@resume-builder/ui/components/input";
+import { Spinner } from "@resume-builder/ui/components/spinner";
+import { cn } from "@resume-builder/utils/style";
 import { Combobox } from "@/components/ui/combobox";
 import { useFormBlocker } from "@/hooks/use-form-blocker";
 import { getOrpcErrorMessage } from "@/libs/error-message";
@@ -53,13 +53,13 @@ const formSchema = z.discriminatedUnion("type", [
 			),
 	}),
 	z.object({
-		type: z.literal("reactive-resume-json"),
+		type: z.literal("resume-builder-json"),
 		file: z
 			.instanceof(File)
 			.refine((file) => file.type === "application/json", { message: "File must be a JSON file" }),
 	}),
 	z.object({
-		type: z.literal("reactive-resume-v4-json"),
+		type: z.literal("resume-builder-v4-json"),
 		file: z
 			.instanceof(File)
 			.refine((file) => file.type === "application/json", { message: "File must be a JSON file" }),
@@ -123,13 +123,13 @@ export function ImportResumeDialog(_: DialogProps<"resume.import">) {
 					data = importer.parse(json);
 				}
 
-				if (value.type === "reactive-resume-json") {
+				if (value.type === "resume-builder-json") {
 					const json = await value.file.text();
 					const importer = new ReactiveResumeJSONImporter();
 					data = importer.parse(json);
 				}
 
-				if (value.type === "reactive-resume-v4-json") {
+				if (value.type === "resume-builder-v4-json") {
 					const json = await value.file.text();
 					const importer = new ReactiveResumeV4JSONImporter();
 					data = importer.parse(json);
@@ -260,14 +260,14 @@ export function ImportResumeDialog(_: DialogProps<"resume.import">) {
 										}}
 										options={[
 											{
-												value: "reactive-resume-json",
+												value: "resume-builder-json",
 												label: t({
 													comment: "Import source option for current Resume Builder JSON format",
 													message: "Resume Builder (JSON)",
 												}),
 											},
 											{
-												value: "reactive-resume-v4-json",
+												value: "resume-builder-v4-json",
 												label: t({
 													comment: "Import source option for legacy Resume Builder v4 JSON format",
 													message: "Resume Builder v4 (JSON)",

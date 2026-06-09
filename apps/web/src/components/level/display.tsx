@@ -1,7 +1,7 @@
-import type { levelDesignSchema } from "@reactive-resume/schema/resume/data";
+import type { levelDesignSchema } from "@resume-builder/schema/resume/data";
 import type z from "zod";
 import { t } from "@lingui/core/macro";
-import { cn } from "@reactive-resume/utils/style";
+import { cn } from "@resume-builder/utils/style";
 
 type Props = z.infer<typeof levelDesignSchema> &
 	React.ComponentProps<"div"> & {

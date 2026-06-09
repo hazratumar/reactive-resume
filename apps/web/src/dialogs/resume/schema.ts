@@ -15,7 +15,7 @@ import {
 	skillItemSchema,
 	summaryItemSchema,
 	volunteerItemSchema,
-} from "@reactive-resume/schema/resume/data";
+} from "@resume-builder/schema/resume/data";
 
 export const resumeDialogSchemas = [
 	z.object({ type: z.literal("resume.create"), data: z.undefined() }),

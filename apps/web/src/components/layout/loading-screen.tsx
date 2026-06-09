@@ -1,5 +1,5 @@
 import { Trans } from "@lingui/react/macro";
-import { Spinner } from "@reactive-resume/ui/components/spinner";
+import { Spinner } from "@resume-builder/ui/components/spinner";
 
 export function LoadingScreen() {
 	return (

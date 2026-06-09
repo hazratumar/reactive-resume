@@ -12,12 +12,12 @@ const dbMock = vi.hoisted(() => ({
 	select: vi.fn(),
 }));
 
-vi.mock("@reactive-resume/auth/config", () => ({
+vi.mock("@resume-builder/auth/config", () => ({
 	auth: authMock,
 	verifyOAuthToken: verifyOAuthTokenMock,
 }));
-vi.mock("@reactive-resume/db/client", () => ({ db: dbMock }));
-vi.mock("@reactive-resume/db/schema", () => ({ user: { __table: "user" } }));
+vi.mock("@resume-builder/db/client", () => ({ db: dbMock }));
+vi.mock("@resume-builder/db/schema", () => ({ user: { __table: "user" } }));
 vi.mock("drizzle-orm", () => ({ eq: () => "EQ" }));
 
 const { resolveUserFromRequestHeaders } = await import("./context");

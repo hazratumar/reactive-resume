@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getTableColumns, getTableName } from "drizzle-orm";
-import { defaultResumeData } from "@reactive-resume/schema/resume/default";
+import { defaultResumeData } from "@resume-builder/schema/resume/default";
 import { resume, resumeAnalysis, resumeStatistics } from "./resume";
 
 describe("resume table definition", () => {

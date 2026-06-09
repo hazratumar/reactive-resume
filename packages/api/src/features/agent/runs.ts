@@ -1,6 +1,6 @@
 import { and, eq, isNull } from "drizzle-orm";
-import { db } from "@reactive-resume/db/client";
-import * as schema from "@reactive-resume/db/schema";
+import { db } from "@resume-builder/db/client";
+import * as schema from "@resume-builder/db/schema";
 
 type AgentRunStateDb = Pick<typeof db, "update">;
 

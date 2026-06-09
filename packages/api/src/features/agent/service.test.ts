@@ -30,8 +30,8 @@ const aiProvidersServiceMock = {
 	markUsed: vi.fn(),
 };
 
-vi.mock("@reactive-resume/db/client", () => ({ db: dbMock }));
-vi.mock("@reactive-resume/db/schema", () => ({
+vi.mock("@resume-builder/db/client", () => ({ db: dbMock }));
+vi.mock("@resume-builder/db/schema", () => ({
 	agentThread: {
 		id: "agent_threads.id",
 		userId: "agent_threads.user_id",
@@ -125,8 +125,8 @@ vi.mock("./tools", () => ({
 	buildAgentInstructions: vi.fn(),
 	buildAgentTools: vi.fn(() => ({})),
 }));
-vi.mock("@reactive-resume/schema/resume/default", () => ({ defaultResumeData: {} }));
-vi.mock("@reactive-resume/utils/string", () => ({ generateId: () => "test-id" }));
+vi.mock("@resume-builder/schema/resume/default", () => ({ defaultResumeData: {} }));
+vi.mock("@resume-builder/utils/string", () => ({ generateId: () => "test-id" }));
 vi.mock("@orpc/server", () => ({ streamToEventIterator: vi.fn() }));
 
 beforeEach(() => {

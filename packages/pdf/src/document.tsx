@@ -1,6 +1,6 @@
-import type { LayoutPage, ResumeData, Typography } from "@reactive-resume/schema/resume/data";
-import type { Template } from "@reactive-resume/schema/templates";
-import type { Locale } from "@reactive-resume/utils/locale";
+import type { LayoutPage, ResumeData, Typography } from "@resume-builder/schema/resume/data";
+import type { Template } from "@resume-builder/schema/templates";
+import type { Locale } from "@resume-builder/utils/locale";
 import type { ComponentType } from "react";
 import type { SectionTitleResolver } from "./section-title";
 import { useMemo } from "react";
