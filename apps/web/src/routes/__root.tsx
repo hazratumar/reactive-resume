@@ -17,7 +17,6 @@ import { DirectionProvider } from "@resume-builder/ui/components/direction";
 import { Toaster } from "@resume-builder/ui/components/sonner";
 import { TooltipProvider } from "@resume-builder/ui/components/tooltip";
 import { BreakpointIndicator } from "@/components/layout/breakpoint-indicator";
-import { DonationToast } from "@/components/ui/donation-toast";
 import { DialogManager } from "@/dialogs/manager";
 import { CommandPalette } from "@/features/command-palette";
 import { ThemeProvider } from "@/features/theme/provider";
@@ -126,7 +125,6 @@ function RootComponent() {
 													<PromptDialogProvider>
 														<Outlet />
 
-														<DonationToast />
 														<DialogManager />
 														<CommandPalette />
 														<Toaster richColors position="bottom-right" />

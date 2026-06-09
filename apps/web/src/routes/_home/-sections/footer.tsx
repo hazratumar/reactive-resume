@@ -26,7 +26,6 @@ type SocialLink = {
 
 const getResourceLinks = (): FooterLinkItem[] => [
 	{ url: "https://docs.resumebuilder.com", label: t`Documentation` },
-	{ url: "https://opencollective.com/resume-builder/donate", label: t`Sponsorships` },
 	{ url: "https://github.com/amruthpillai/resume-builder", label: t`Source Code` },
 	{ url: "https://docs.resumebuilder.com/changelog", label: t`Changelog` },
 ];
